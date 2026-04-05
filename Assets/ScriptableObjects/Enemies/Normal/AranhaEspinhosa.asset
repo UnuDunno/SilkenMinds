@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
+  m_Name: AranhaEspinhosa
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  Image: {fileID: -4502507821145080960, guid: 4ef1a73938c62fa44bf83ac09d166e29, type: 3}
+  Name: Aranha Espinhosa
+  CientificName: Gasteracantha cancriformis
+  Health: 30
+  Description: "\tAs f\xEAmeas t\xEAm a carapa\xE7a r\xEDgida e preta com seis proje\xE7\xF5es
+    (espinhos) pretas ou vermelhas, duas em cada lateral e duas traseiras. Os machos
+    s\xE3o semelhantes na cor, mas no lugar da cor preta, tem a cor cinza e as proje\xE7\xF5es
+    s\xE3o menores e muitas vezes d\xE3o a impress\xE3o de que tem menos quantidade
+    de proje\xE7\xF5es.\n\tEncontra-se da Am\xE9rica do Sul at\xE9 a Am\xE9rica do
+    Norte, sendo o limite sul do Uruguai at\xE9 o norte do Peru e o limite ao norte
+    nos Estados Unidos da Am\xE9rica nos Estados da Carolina do Norte at\xE9 a California."
+  Reference: https://www.inaturalist.org/taxa/49540-Gasteracantha-cancriformis#articles-tab
+  Curiosities: []

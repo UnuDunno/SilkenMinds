@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
+  m_Name: AranhaDeGrama
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  Image: {fileID: 5736708270112012994, guid: e5547f4f7eabf404da192381a0f98dc8, type: 3}
+  Name: Aranha de Grama
+  CientificName: Lycosa erythrognatha
+  Health: 24
+  Description: "\tBastante confundida pela popula\xE7\xE3o com a aranha armadeira,
+    por tamb\xE9m apresentar o display de defesa com patas levantadas quando s\xE3o
+    intimidadas.\n\tPodem ser encontradas predominantemente nas regi\xF5es sul e
+    sudeste do Brasil, bem como no Distrito Federal."
+  Reference: https://www.inaturalist.org/taxa/83111-Lycosa-erythrognatha#articles-tab
+  Curiosities:
+  - "Acidentes causados provocam dor discreta e transit\xF3ria no local da picada.
+    Incha\xE7o e vermelhid\xE3o leves s\xE3o descritos em menos de 20% dos casos.
+    O tratamento, geralmente, n\xE3o \xE9 necess\xE1rio. Eventualmente a dor poder\xE1
+    ser controlada com o uso de analg\xE9sicos orais."

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
+  m_Name: Caranguejeira
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  Image: {fileID: 2458352875505273214, guid: 2a6dc2bb51385814e81d6b5168478aab, type: 3}
+  Name: Caranguejeira
+  CientificName: Iridopelma hirsutum
+  Health: 50
+  Description: "\tAracn\xEDdeo de h\xE1bitos arbor\xEDculas, que vive sob casca de
+    \xE1rvores ou estruturas sob as folhas baixas e at\xE9 mesmo dentro do solo nas
+    florestas tropicais.\n\tOcorre no nordeste do Brasil, na regi\xE3o litor\xE2nea
+    e matas de transi\xE7\xE3o."
+  Reference: https://www.inaturalist.org/taxa/804212-Iridopelma-hirsutum#articles-tab
+  Curiosities:
+  - "A colora\xE7\xE3o desta esp\xE9cie varia \xE0 medida que envelhecem. Assim que
+    nascem, apresentam uma carapa\xE7a escura com um brilho esverdeado em todo comprimento
+    de suas pernas, em forma de linhas horizontais."
+  - "Possuem longas cerdas urticantes, que s\xE3o lan\xE7adas pela aranha como parte
+    de um comportamento defensivo ativo contra os predadores dos vertebrados."
+  - "A alimenta\xE7\xE3o dos jovens desta esp\xE9cie \xE9 baseada em microgrilos
+    e ninfas de barata, para esp\xE9cimes adultos a dieta varia desde grilos, baratas
+    e gafanhotos."
