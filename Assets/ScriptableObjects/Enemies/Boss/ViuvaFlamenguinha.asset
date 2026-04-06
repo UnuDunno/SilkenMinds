@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
   m_Name: ViuvaFlamenguinha
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  Image: {fileID: 0}
-  Name: "Vi\xFAva Flamenguinha"
-  CientificName: Latrodectus curacaviensis
-  Health: 45
-  Description: "\tN\xE3o \xE9 agressiva com seres humanos, se alimenta de pequenos
+  image: {fileID: -7587032346183816794, guid: 606936bdb901244478938a5d039e4445, type: 3}
+  spiderName: "Vi\xFAva Flamenguinha"
+  cientificName: Latrodectus curacaviensis
+  health: 45
+  description: "\tN\xE3o \xE9 agressiva com seres humanos, se alimenta de pequenos
     insetos e possui uma distinta marca no formato de ampulheta com um diamante negro
     e quatro tri\xE2ngulos vermelhos em um quadrado.\n\tEncontrada nas regi\xF5es
-    centro-oeste e nordeste do Brasil.\n\t"
-  Reference: https://www.inaturalist.org/taxa/467606-Latrodectus-curacaviensis#articles-tab
-  Curiosities:
+    centro-oeste e nordeste do Brasil."
+  reference: https://www.inaturalist.org/taxa/467606-Latrodectus-curacaviensis#articles-tab
+  curiosities:
   - "O veneno cont\xE9m neurotoxinas excitat\xF3rias. As picadas geralmente injetam
     pequenas quantidades de veneno, o que pode resultar em sintomas perigosos, principalmente
     em crian\xE7as, idosos e pessoas com problemas cardiovasculares e respirat\xF3rios.

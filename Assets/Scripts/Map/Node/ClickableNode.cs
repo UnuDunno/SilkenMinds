@@ -3,34 +3,34 @@ using UnityEngine.EventSystems;
 
 public class ClickableNode : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    private Node CurrentNode;
+    private Node currentNode;
 
     private void Start()
     {
-        CurrentNode = gameObject.GetComponent<Node>();
+        currentNode = gameObject.GetComponent<Node>();
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (CurrentNode.GetState() != NodeState.Active) return;
+        if (currentNode.GetState() != NodeState.Active) return;
 
         if (eventData.button == PointerEventData.InputButton.Left)
         {
-            CurrentNode.OpenPanel();
+            currentNode.OpenPanel();
 
-            CurrentNode.Complete();
+            currentNode.Complete();
         }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if(CurrentNode.GetState() != NodeState.Active) return;
+        if(currentNode.GetState() != NodeState.Active) return;
 
-        CurrentNode.ActivateOutterRing();
+        currentNode.ActivateOutterRing();
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        CurrentNode.DeactivateOutterRing();
+        currentNode.DeactivateOutterRing();
     }
 }

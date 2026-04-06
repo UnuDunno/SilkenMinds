@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed3edfc252d176545bc6d5480d02ed66, type: 3}
   m_Name: RestNode
   m_EditorClassIdentifier: Assembly-CSharp::NodeData
-  NodeName: Rest Node
-  Type: 3
-  Icon: {fileID: 21300000, guid: 8c500d54ff99a5546a4409724f9b5579, type: 3}
-  Color: {r: 0.8235295, g: 0.4117647, b: 0.1176471, a: 0.69803923}
+  nodeName: Rest Node
+  type: 3
+  icon: {fileID: 21300000, guid: 8c500d54ff99a5546a4409724f9b5579, type: 3}
+  color: {r: 0.8235295, g: 0.4117647, b: 0.1176471, a: 0.69803923}

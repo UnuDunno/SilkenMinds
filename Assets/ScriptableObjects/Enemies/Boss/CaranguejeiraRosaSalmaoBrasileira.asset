@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
   m_Name: CaranguejeiraRosaSalmaoBrasileira
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  Image: {fileID: -5831100263502040423, guid: fb6777983e4a4e541b9afc3c7cc73ce2, type: 3}
-  Name: "Caranguejeira Rosa Salm\xE3o Brasileira"
-  CientificName: Lasiodora parahybana
-  Health: 60
-  Description: "\tDe comportamento agressivo, n\xE3o representa contudo muitos riscos
+  image: {fileID: -5831100263502040423, guid: fb6777983e4a4e541b9afc3c7cc73ce2, type: 3}
+  spiderName: "Caranguejeira Rosa Salm\xE3o Brasileira"
+  cientificName: Lasiodora parahybana
+  health: 60
+  description: "\tDe comportamento agressivo, n\xE3o representa contudo muitos riscos
     ao homem adulto. \n\tOrigin\xE1ria da parte oriental do Nordeste Brasileiro,
-    onde \xE9 end\xEAmica. "
-  Reference: https://www.inaturalist.org/taxa/367113-Lasiodora-parahybana#articles-tab
-  Curiosities:
+    onde \xE9 end\xEAmica."
+  reference: https://www.inaturalist.org/taxa/367113-Lasiodora-parahybana#articles-tab
+  curiosities:
   - "As f\xEAmeas vivem de dez a quinze anos, e os machos correm o risco de morrer
     na c\xF3pula, porque a f\xEAmea costuma com\xEA-los ap\xF3s o ato de acasalamento."
   - "Chegam a medir at\xE9 25 cm de comprimento na idade adulta."

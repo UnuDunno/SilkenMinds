@@ -13,19 +13,19 @@ public enum NodeState
 public class Node : MonoBehaviour 
 {
     [SerializeField] private Transform nodePosition;
-    [SerializeField] private NodeData NodeData;
-    [SerializeField] private GameObject OutterRing;
-    [SerializeField] private GameObject Panel;
+    [SerializeField] private NodeData nodeData;
+    [SerializeField] private GameObject outterRing;
+    [SerializeField] private GameObject panel;
 
-    private NodeState State = NodeState.Inactive;
+    private NodeState state = NodeState.Inactive;
 
-    private int Layer;
+    private int layer;
 
-    private List<GameObject> NextNodes = new List<GameObject>();
+    private List<GameObject> nextNodes = new List<GameObject>();
 
     public void SetLayer(int layer)
     {
-        Layer = layer;
+        this.layer = layer;
     }
 
     public void UpdatePosition(Vector2 position)
@@ -42,9 +42,9 @@ public class Node : MonoBehaviour
     {
         if (!node) return;
 
-        if (NextNodes.Contains(node)) return;
+        if (nextNodes.Contains(node)) return;
 
-        NextNodes.Add(node);
+        nextNodes.Add(node);
     }
 
     public float NodeDistance(GameObject node)
@@ -63,17 +63,17 @@ public class Node : MonoBehaviour
 
     public NodeData GetNodeData()
     {
-        return NodeData;
+        return nodeData;
     }
 
     public void SetNodeData(NodeData nodeData)
     {
-        NodeData = nodeData;
+        this.nodeData = nodeData;
     }
 
     public NodeState GetState()
     {
-        return State;
+        return state;
     }
 
     private SpriteRenderer GetSpriteRenderer()
@@ -83,17 +83,17 @@ public class Node : MonoBehaviour
 
     public void SetPanel(GameObject panel)
     {
-        Panel = panel;
+        this.panel = panel;
     }
 
     public void OpenPanel()
     {
-        Panel.SetActive(true);
+        panel.SetActive(true);
     }
 
     public void Activate()
     {
-        State = NodeState.Active;
+        state = NodeState.Active;
 
         SpriteRenderer spriteRenderer = GetSpriteRenderer();
 
@@ -105,7 +105,7 @@ public class Node : MonoBehaviour
 
     public void Deactivate()
     {
-        State = NodeState.Deactivated;
+        state = NodeState.Deactivated;
 
         SpriteRenderer spriteRenderer = GetSpriteRenderer();
 
@@ -117,15 +117,15 @@ public class Node : MonoBehaviour
 
     public void Complete()
     {
-        foreach(GameObject NodeObj in NextNodes)
+        foreach(GameObject NodeObj in nextNodes)
         {
             NodeObj.GetComponent<Node>().Activate();
         }
 
         MapController mapController = FindFirstObjectByType<MapController>();
-        if(mapController) mapController.DeactivateLayer(Layer);
+        if(mapController) mapController.DeactivateLayer(layer);
 
-        State = NodeState.Completed;
+        state = NodeState.Completed;
 
         SpriteRenderer spriteRenderer = GetSpriteRenderer();
 
@@ -137,12 +137,12 @@ public class Node : MonoBehaviour
 
     public void ActivateOutterRing()
     {
-        OutterRing.SetActive(true);
+        outterRing.SetActive(true);
     }
 
     public void DeactivateOutterRing()
     {
-        OutterRing.SetActive(false);
+        outterRing.SetActive(false);
     }
 }
 

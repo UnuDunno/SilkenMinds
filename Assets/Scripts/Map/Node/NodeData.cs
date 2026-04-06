@@ -12,8 +12,8 @@ public enum NodeType
 [CreateAssetMenu(fileName = "NodeData", menuName = "Scriptable Objects/NodeData")]
 public class NodeData : ScriptableObject
 {
-    public string NodeName = "Default";
-    public NodeType Type;
-    public Sprite Icon;
-    public Color Color = Color.white;
+    public string nodeName = "Default";
+    public NodeType type;
+    public Sprite icon;
+    public Color color = Color.white;
 }

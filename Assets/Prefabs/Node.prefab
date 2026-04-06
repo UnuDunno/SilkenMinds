@@ -108,9 +108,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   nodePosition: {fileID: 8540141019454105724}
-  NodeData: {fileID: 0}
-  OutterRing: {fileID: 1993186336753664978}
-  MapController: {fileID: 5642214015329448187, guid: 1622d72276ebca34ab8a8e5fa613351a, type: 3}
+  nodeData: {fileID: 0}
+  outterRing: {fileID: 1993186336753664978}
+  panel: {fileID: 0}
 --- !u!58 &1901582523690398312
 CircleCollider2D:
   m_ObjectHideFlags: 0

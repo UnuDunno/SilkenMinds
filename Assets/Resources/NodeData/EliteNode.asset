@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed3edfc252d176545bc6d5480d02ed66, type: 3}
   m_Name: EliteNode
   m_EditorClassIdentifier: Assembly-CSharp::NodeData
-  NodeName: Elite Node
-  Type: 4
-  Icon: {fileID: 21300000, guid: e5da668c6557abb47a17a303cf69943f, type: 3}
-  Color: {r: 0.29411766, g: 0.28235295, b: 0.28235295, a: 0.69803923}
+  nodeName: Elite Node
+  type: 4
+  icon: {fileID: 21300000, guid: e5da668c6557abb47a17a303cf69943f, type: 3}
+  color: {r: 0.29411766, g: 0.28235295, b: 0.28235295, a: 0.69803923}

@@ -7,20 +7,20 @@ public class MapCreator : MonoBehaviour
     public static MapCreator Instance { get; private set; }
 
     [Header("Prefabs")]
-    [SerializeField] private GameObject NodePrefab;
-    [SerializeField] private GameObject LinePrefab;
+    [SerializeField] private GameObject nodePrefab;
+    [SerializeField] private GameObject linePrefab;
 
     [Header("Spawners")]
-    [SerializeField] private GameObject NodesContainer;
-    [SerializeField] private GameObject EdgesContainer;
+    [SerializeField] private GameObject nodesContainer;
+    [SerializeField] private GameObject edgesContainer;
 
     [Header("Panels")]
-    [SerializeField] private GameObject CombatPanel;
-    [SerializeField] private GameObject RestPanel;
-    [SerializeField] private GameObject ShopPanel;
-    [SerializeField] private GameObject EventPanel;
+    [SerializeField] private GameObject combatPanel;
+    [SerializeField] private GameObject restPanel;
+    [SerializeField] private GameObject shopPanel;
+    [SerializeField] private GameObject eventPanel;
 
-    private readonly List<(int weight, NodeType type)> NodesWeights = new List<(int, NodeType)> {
+    private readonly List<(int weight, NodeType type)> nodesWeights = new List<(int, NodeType)> {
         (7, NodeType.Combat),
         (5, NodeType.Rest),
         (4, NodeType.Shop),
@@ -46,7 +46,7 @@ public class MapCreator : MonoBehaviour
 
     private void GenerateMapNodes(List<List<GameObject>> map, float initialRadius, int layers, int layerMultiplier, float radiusIncrement)
     {
-        if (!NodePrefab) return;
+        if (!nodePrefab) return;
 
         Vector2 mapCenter = new Vector2(0, 0);
 
@@ -165,10 +165,10 @@ public class MapCreator : MonoBehaviour
 
     private NodeType GetNodeType()
     {
-        int nodesWeightsSize = NodesWeights.Count;
+        int nodesWeightsSize = nodesWeights.Count;
         int totalWeight = 0;
 
-        foreach(var (weight, type) in NodesWeights)
+        foreach(var (weight, type) in nodesWeights)
         {
             totalWeight += weight;
         }
@@ -178,15 +178,15 @@ public class MapCreator : MonoBehaviour
 
         for(int i = 0; i < nodesWeightsSize; i++)
         {
-            cumulative += NodesWeights[i].weight;
+            cumulative += nodesWeights[i].weight;
 
             if(roll < cumulative)
             {
-                return NodesWeights[i].type;
+                return nodesWeights[i].type;
             }
         }
 
-        return NodesWeights[nodesWeightsSize - 1].type;
+        return nodesWeights[nodesWeightsSize - 1].type;
     }
 
     private NodeData CreateNodeData(NodeType nodeType)
@@ -203,7 +203,7 @@ public class MapCreator : MonoBehaviour
 
     private GameObject CreateNode(Vector2 position, NodeType nodeType, int layer)
     {
-        GameObject newNode = Instantiate(NodePrefab, NodesContainer.transform);
+        GameObject newNode = Instantiate(nodePrefab, nodesContainer.transform);
         Node node = newNode.GetComponent<Node>();
 
         NodeData nodeData = CreateNodeData(nodeType);
@@ -217,31 +217,31 @@ public class MapCreator : MonoBehaviour
             case NodeType.Combat:
             case NodeType.Elite:
             case NodeType.Boss:
-                node.SetPanel(CombatPanel);
+                node.SetPanel(combatPanel);
                 break;
             case NodeType.Event:
-                node.SetPanel(EventPanel);
+                node.SetPanel(eventPanel);
                 break;
             case NodeType.Rest:
-                node.SetPanel(RestPanel);
+                node.SetPanel(restPanel);
                 break;
             case NodeType.Shop:
-                node.SetPanel(ShopPanel);
+                node.SetPanel(shopPanel);
                 break;
         }
 
         SpriteRenderer nodeRenderer = newNode.GetComponent<SpriteRenderer>();
-        nodeRenderer.sprite = nodeData.Icon;
-        nodeRenderer.color = nodeData.Color;
+        nodeRenderer.sprite = nodeData.icon;
+        nodeRenderer.color = nodeData.color;
 
         return newNode;
     }
 
     private void CreateEdge(GameObject a, GameObject b)
     {
-        if (!LinePrefab) return;
+        if (!linePrefab) return;
 
-        GameObject edge = Instantiate(LinePrefab, EdgesContainer.transform);
+        GameObject edge = Instantiate(linePrefab, edgesContainer.transform);
         LineRenderer lr = edge.GetComponent<LineRenderer>();
 
         lr.SetPosition(0, a.transform.position);

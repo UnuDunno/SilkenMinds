@@ -1,13 +1,21 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PanelController : MonoBehaviour
 {
-    [SerializeField] private GameObject Panel;
+    [SerializeField] private GameObject panel;
+    [SerializeField] private PlayerInput playerInput;
+
+    private void Awake()
+    {
+        playerInput.SwitchCurrentActionMap("Panel");
+    }
 
     public void ClosePanel()
     {
-        if (Panel == null) return;
+        if (panel == null) return;
 
-        Panel.SetActive(false);
+        playerInput.SwitchCurrentActionMap("Map");
+        panel.SetActive(false);
     }
 }
