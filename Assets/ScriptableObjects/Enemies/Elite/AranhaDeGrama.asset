@@ -16,10 +16,10 @@ MonoBehaviour:
   spiderName: Aranha de Grama
   cientificName: Lycosa erythrognatha
   health: 24
-  description: "\tBastante confundida pela popula\xE7\xE3o com a aranha armadeira,
+  description: "Bastante confundida pela popula\xE7\xE3o com a aranha armadeira,
     por tamb\xE9m apresentar o display de defesa com patas levantadas quando s\xE3o
-    intimidadas.\n\tPodem ser encontradas predominantemente nas regi\xF5es sul e
-    sudeste do Brasil, bem como no Distrito Federal."
+    intimidadas.\\n\\nPodem ser encontradas predominantemente nas regi\xF5es sul
+    e sudeste do Brasil, bem como no Distrito Federal."
   reference: https://www.inaturalist.org/taxa/83111-Lycosa-erythrognatha#articles-tab
   curiosities:
   - "Acidentes causados provocam dor discreta e transit\xE1ria no local da picada.

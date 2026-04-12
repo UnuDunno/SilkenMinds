@@ -16,9 +16,9 @@ MonoBehaviour:
   spiderName: "Vi\xFAva Marrom"
   cientificName: Latrodectus geometricus
   health: 30
-  description: "\tParente da conhecida Vi\xFAva Negra. A Vi\xFAva marrom tem listras
+  description: "Parente da conhecida Vi\xFAva Negra. A Vi\xFAva marrom tem listras
     preto e branco nas laterais de seu abd\xF4men e nas patas, bem como uma marca\xE7\xE3o
-    em formato de ampulheta de cor amarelada.\n\tEncontradas em todo o mundo, mas
+    em formato de ampulheta de cor amarelada.\\n\\nEncontradas em todo o mundo, mas
     acredita-se que sejam origin\xE1rias da \xC1frica ou da Am\xE9rica do Sul."
   reference: https://www.inaturalist.org/taxa/47383-Latrodectus-geometricus#articles-tab
   curiosities:

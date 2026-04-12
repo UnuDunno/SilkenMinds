@@ -17,6 +17,8 @@ public class Node : MonoBehaviour
     [SerializeField] private GameObject outterRing;
     [SerializeField] private GameObject panel;
 
+    private PanelController panelController;
+
     private NodeState state = NodeState.Inactive;
 
     private int layer;
@@ -84,10 +86,14 @@ public class Node : MonoBehaviour
     public void SetPanel(GameObject panel)
     {
         this.panel = panel;
+
+        panelController = panel.GetComponent<PanelController>();
+
     }
 
     public void OpenPanel()
     {
+        panelController.ResetPanel(nodeData.type);
         panel.SetActive(true);
     }
 

@@ -16,9 +16,9 @@ MonoBehaviour:
   spiderName: "Vi\xFAva Flamenguinha"
   cientificName: Latrodectus curacaviensis
   health: 45
-  description: "\tN\xE3o \xE9 agressiva com seres humanos, se alimenta de pequenos
+  description: "N\xE3o \xE9 agressiva com seres humanos, se alimenta de pequenos
     insetos e possui uma distinta marca no formato de ampulheta com um diamante negro
-    e quatro tri\xE2ngulos vermelhos em um quadrado.\n\tEncontrada nas regi\xF5es
+    e quatro tri\xE2ngulos vermelhos em um quadrado.\\n\\nEncontrada nas regi\xF5es
     centro-oeste e nordeste do Brasil."
   reference: https://www.inaturalist.org/taxa/467606-Latrodectus-curacaviensis#articles-tab
   curiosities:

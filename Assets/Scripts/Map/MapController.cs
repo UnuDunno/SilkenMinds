@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -26,6 +27,11 @@ public class MapController : MonoBehaviour
     private Vector3 difference;
     private bool isDragging;
 
+    [Header("Player")]
+    [SerializeField] private Player player;
+    [SerializeField] private TMP_Text playerHealthText;
+    [SerializeField] private TMP_Text playerMoneyText;
+
     private List<List<GameObject>> map;
 
     private void Awake()
@@ -39,6 +45,8 @@ public class MapController : MonoBehaviour
     {
         map = new List<List<GameObject>>();
         mapCreator.GenerateMap(map, initialRadius, layers, layerMultiplier, radiusIncrement);
+
+        UpdatePlayerUI();
     }
 
     // Update is called once per frame
@@ -81,5 +89,11 @@ public class MapController : MonoBehaviour
         {
             NodeObj.GetComponent<Node>().Deactivate();
         }
+    }
+
+    public void UpdatePlayerUI()
+    {
+        playerHealthText.text = $"{player.GetCurrentHealth()}/{player.GetMaxHealth()}";
+        playerMoneyText.text = $"{player.GetMoney()}";
     }
 }

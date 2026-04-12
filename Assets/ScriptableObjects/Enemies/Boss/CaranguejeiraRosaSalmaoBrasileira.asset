@@ -16,8 +16,8 @@ MonoBehaviour:
   spiderName: "Caranguejeira Rosa Salm\xE3o Brasileira"
   cientificName: Lasiodora parahybana
   health: 60
-  description: "\tDe comportamento agressivo, n\xE3o representa contudo muitos riscos
-    ao homem adulto. \n\tOrigin\xE1ria da parte oriental do Nordeste Brasileiro,
+  description: "De comportamento agressivo, n\xE3o representa contudo muitos riscos
+    ao homem adulto.\\n\\nOrigin\xE1ria da parte oriental do Nordeste Brasileiro,
     onde \xE9 end\xEAmica."
   reference: https://www.inaturalist.org/taxa/367113-Lasiodora-parahybana#articles-tab
   curiosities:

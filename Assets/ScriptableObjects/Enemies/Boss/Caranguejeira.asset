@@ -16,9 +16,9 @@ MonoBehaviour:
   spiderName: Caranguejeira
   cientificName: Iridopelma hirsutum
   health: 50
-  description: "\tAracn\xEDdeo de h\xE1bitos arbor\xEDculas, que vive sob casca de
+  description: "Aracn\xEDdeo de h\xE1bitos arbor\xEDculas, que vive sob casca de
     \xE1rvores ou estruturas sob as folhas baixas e at\xE9 mesmo dentro do solo nas
-    florestas tropicais.\n\tOcorre no nordeste do Brasil, na regi\xE3o litor\xE2nea
+    florestas tropicais.\\n\\nOcorre no nordeste do Brasil, na regi\xE3o litor\xE2nea
     e matas de transi\xE7\xE3o."
   reference: https://www.inaturalist.org/taxa/804212-Iridopelma-hirsutum#articles-tab
   curiosities:
