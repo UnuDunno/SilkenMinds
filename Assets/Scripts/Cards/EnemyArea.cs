@@ -29,7 +29,9 @@ public class EnemyArea : MonoBehaviour, ICardDropArea
 
         if (cardData.fearValue > player.GetCurrentFear()) return false;
 
-        foreach(Effect effect in cardData.effects)
+        player.DecreaseCurrentFear(cardData.fearValue);
+
+        foreach (Effect effect in cardData.effects)
         {
             effect.cardEffect.SetAmount(effect.value);
             effect.cardEffect.ApplyEffect(player, enemy);

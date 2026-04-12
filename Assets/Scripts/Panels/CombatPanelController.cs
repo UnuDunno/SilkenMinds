@@ -15,6 +15,8 @@ public class CombatPanelController : PanelController
     [SerializeField] private GameObject enemyArea;
     [SerializeField] private Image enemyIcon;
     [SerializeField] private GameObject enemyInfos;
+    [SerializeField] private GameObject playerDefense;
+    [SerializeField] private TMP_Text fearText;
 
     [Header("Enemies")] 
     [SerializeField] private List<EnemyData> normalEnemies;
@@ -44,6 +46,10 @@ public class CombatPanelController : PanelController
     {
         base.ResetPanel(nodeType);
         this.nodeType = nodeType;
+
+        playerDefense.SetActive(true);
+        playerDefense.GetComponentInChildren<TMP_Text>().text = $"{player.GetDefense()}";
+        fearText.text = $"{player.GetCurrentFear()}/{player.GetMaxFear()}";
 
         SetEnemy();
 
@@ -123,6 +129,9 @@ public class CombatPanelController : PanelController
     {
         DrawCards(player.GetHandSize() - playerHand.Count);
         player.ResetDefense();
+        player.ResetFear();
+
+        UpdateUI();
     }
 
     public void EndTurn()
@@ -183,12 +192,24 @@ public class CombatPanelController : PanelController
     {
         enemyCurrentHealth = enemyArea.GetComponent<EnemyArea>().GetEnemyData().GetHealth();
 
+        DrawCards(player.GetCardsToDraw());
+        player.SetCardsToDraw(0);
+
         UpdateUI();
     }
 
     public void UpdateUI()
     {
         enemyHealthText.text = $"{enemyCurrentHealth}/{enemyMaxHealth}";
+        playerDefense.GetComponentInChildren<TMP_Text>().text = $"{player.GetDefense()}";
+        fearText.text = $"{player.GetCurrentFear()}/{player.GetMaxFear()}";
         UpdateHealthBar();
+    }
+
+    public override void ClosePanel()
+    {
+        playerDefense.SetActive(false);
+
+        base.ClosePanel();
     }
 }

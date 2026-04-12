@@ -95,6 +95,10 @@ public class Player : MonoBehaviour
         maxFear += amount;
     }
 
+    public void ResetFear()
+    {
+        currentFear = maxFear;
+    }
 
     // ********** MONEY **********
     public int GetMoney()
@@ -116,6 +120,11 @@ public class Player : MonoBehaviour
 
 
     // ********** DEFENSE **********
+    public int GetDefense()
+    {
+        return currentDefense;
+    }
+
     public void IncreaseDefense(int amount)
     {
         currentDefense += amount;
