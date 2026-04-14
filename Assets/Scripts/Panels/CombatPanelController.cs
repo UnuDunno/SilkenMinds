@@ -38,9 +38,16 @@ public class CombatPanelController : PanelController
     private int enemyMaxHealth;
 
     // Player
-    private List<GameObject> playerHand;
+    private List<Card> playerHand;
     private List<CardData> discardPile;
     private List<CardData> combatDeck;
+
+    public void Awake()
+    {
+        EnemyArea enemy = enemyArea.GetComponent<EnemyArea>();
+        enemy.updateCombat.AddListener(UpdateCombat);
+        enemy.onDiscard.AddListener(DiscardCard);
+    }
 
     public override void ResetPanel(NodeType nodeType)
     {
@@ -53,7 +60,7 @@ public class CombatPanelController : PanelController
 
         SetEnemy();
 
-        playerHand = new List<GameObject>();
+        playerHand = new List<Card>();
         discardPile = new List<CardData>();
         combatDeck = new List<CardData>(player.GetDeck());
         ShuffleDeck();
@@ -103,9 +110,9 @@ public class CombatPanelController : PanelController
     {
         while(playerHand.Count > 0)
         {
-            GameObject card = playerHand[0];
-            playerHand.Remove(card);
-            Destroy(card);
+            Card card = playerHand[0];
+
+            DiscardCard(card);
         }
     }
 
@@ -117,8 +124,10 @@ public class CombatPanelController : PanelController
 
             CardData drawnCard = combatDeck[0];
 
-            GameObject card = Instantiate(cardPrefab, playerHandArea.transform);
-            card.GetComponent<Card>().SetCardData(drawnCard);
+            GameObject cardGO = Instantiate(cardPrefab, playerHandArea.transform);
+            Card card = cardGO.GetComponent<Card>();
+            card.SetCardData(drawnCard);
+            card.SetContainer(cardGO);
 
             playerHand.Add(card);
             combatDeck.Remove(drawnCard);
@@ -186,6 +195,13 @@ public class CombatPanelController : PanelController
         discardPile.Clear();
 
         ShuffleDeck();
+    }
+
+    public void DiscardCard(Card card)
+    {
+        playerHand.Remove(card);
+        discardPile.Add(card.GetCardData());
+        card.DestroyCard();
     }
 
     public void UpdateCombat()

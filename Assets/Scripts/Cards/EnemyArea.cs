@@ -6,7 +6,8 @@ public class EnemyArea : MonoBehaviour, ICardDropArea
     [SerializeField] private EnemyData enemy;
     [SerializeField] private Player player;
 
-    [SerializeField] private UnityEvent updateCombat;
+    public UnityEvent updateCombat;
+    public UnityEvent<Card> onDiscard;
 
     public void SetEnemyData(EnemyData enemyData)
     {
@@ -37,8 +38,7 @@ public class EnemyArea : MonoBehaviour, ICardDropArea
             effect.cardEffect.ApplyEffect(player, enemy);
         }
 
-        Destroy(card.gameObject);
-
+        onDiscard.Invoke(card);
         updateCombat.Invoke();
 
         return true;

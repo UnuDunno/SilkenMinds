@@ -11,6 +11,7 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     [SerializeField] private TMP_Text cardName;
     [SerializeField] private TMP_Text cardDescription;
     [SerializeField] private TMP_Text cardFear;
+    [SerializeField] private GameObject container;
     
     // ---  Drag  ---
     private Vector3 origin;
@@ -63,4 +64,13 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
         player.DecreaseCurrentFear(cardData.fearValue);
     }
 
+    public void SetContainer(GameObject container)
+    {
+        this.container = container;
+    }
+
+    public void DestroyCard()
+    {
+        Destroy(container);
+    }
 }
