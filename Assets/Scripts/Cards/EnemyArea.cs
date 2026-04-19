@@ -35,7 +35,7 @@ public class EnemyArea : MonoBehaviour, ICardDropArea
         foreach (Effect effect in cardData.effects)
         {
             effect.cardEffect.SetAmount(effect.value);
-            effect.cardEffect.ApplyEffect(player, enemy);
+            effect.cardEffect.ApplyEffect(player, enemy, Target.Player);
         }
 
         onDiscard.Invoke(card);

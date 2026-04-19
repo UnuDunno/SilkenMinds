@@ -17,6 +17,10 @@ public class Player : MonoBehaviour
     private int currentFear;
     private int currentDefense;
     private int cardsToDraw;
+    private int fearToRemove;
+
+    private static readonly string path_to_scriptable_objects = "ScriptableObjects";
+    private readonly string path_to_main_deck_cards = $"{path_to_scriptable_objects}/Cards/MainDeck";
 
 
     private void Start()
@@ -26,7 +30,7 @@ public class Player : MonoBehaviour
         money = 100;
         maxFear = 5;
 
-        startingDeck ??= CreateStartingDeck();
+        CreateStartingDeck();
 
         healthRegeneration = 0.3f;
         currentHealth = maxHealth;
@@ -95,9 +99,17 @@ public class Player : MonoBehaviour
         maxFear += amount;
     }
 
+    public void SetFearToRemove(int amount)
+    {
+        fearToRemove = amount;
+    }
+
     public void ResetFear()
     {
-        currentFear = maxFear;
+        currentFear = maxFear - fearToRemove;
+        currentFear = Mathf.Max(currentFear, 0);
+
+        fearToRemove = 0;
     }
 
     // ********** MONEY **********
@@ -145,9 +157,38 @@ public class Player : MonoBehaviour
 
 
     // ********** DECK **********
-    private List<CardData> CreateStartingDeck()
+    private void CreateStartingDeck()
     {
-        return new List<CardData>();
+        startingDeck = new List<CardData>();
+        CardData[] mainDeckCards = Resources.LoadAll<CardData>(path_to_main_deck_cards);
+
+        foreach(CardData cardData in mainDeckCards)
+        {
+            switch(cardData.cardName.ToLower())
+            {
+                case "bloqueio":
+                    for(int i = 0; i < 6; i++) startingDeck.Add(cardData);
+                    break;
+                case "golpe":
+                    for (int i = 0; i < 6; i++) startingDeck.Add(cardData);
+                    break;
+                case "investida":
+                    for (int i = 0; i < 2; i++) startingDeck.Add(cardData);
+                    break;
+                case "olhos de caçador":
+                    for (int i = 0; i < 2; i++) startingDeck.Add(cardData);
+                    break;
+                case "teia da vida":
+                    for (int i = 0; i < 2; i++) startingDeck.Add(cardData);
+                    break;
+                case "teia protetora":
+                    for (int i = 0; i < 2; i++) startingDeck.Add(cardData);
+                    break;
+                default:
+                    Debug.Log($"Unexpected card in the starting deck: {cardData.cardName}");
+                    break;
+            }
+        }
     }
 
     public List<CardData> GetDeck()
@@ -168,5 +209,10 @@ public class Player : MonoBehaviour
     public int GetHandSize()
     {
         return handSize;
+    }
+
+    public void AddCardToDeck(CardData card)
+    {
+        startingDeck.Add(card);
     }
 }

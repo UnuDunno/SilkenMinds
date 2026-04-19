@@ -11,8 +11,11 @@ public class EnemyData : ScriptableObject
     [SerializeField] [TextArea] private string description = "Aranha comum";
     [SerializeField] private string reference;
     [SerializeField] private List<string> curiosities = new List<string>();
+    [SerializeField] private int reward;
+    [SerializeField] private List<Effect> actions;
 
     private int defense = 0;
+    private Effect nextAction;
 
     // ********** GETTERS **********
     public Sprite GetImage() {  return image; }
@@ -28,6 +31,10 @@ public class EnemyData : ScriptableObject
     public string GetReference() { return reference; }
 
     public List<string> GetCuriosities() { return curiosities; }
+
+    public int GetReward() { return reward; }
+
+    public int GetDefense() { return defense; }
 
     // ********** SETTERS **********
     public void SetDefense(int defense)
@@ -49,4 +56,18 @@ public class EnemyData : ScriptableObject
         if (health < 0) health = 0;
     }
 
+    public void Heal(int amount)
+    {
+        health += amount;
+    }
+
+    public void SetNextAction()
+    {
+        nextAction = actions[UnityEngine.Random.Range(0, actions.Count)];
+    }
+
+    public Effect GetNextAction()
+    {
+        return nextAction;
+    }
 }

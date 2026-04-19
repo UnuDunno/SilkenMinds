@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
+  m_Name: Caranguejeira
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  image: {fileID: 2458352875505273214, guid: 2a6dc2bb51385814e81d6b5168478aab, type: 3}
+  spiderName: Caranguejeira
+  cientificName: Iridopelma hirsutum
+  health: 250
+  description: "Aracn\xEDdeo de h\xE1bitos arbor\xEDculas, que vive sob casca de
+    \xE1rvores ou estruturas sob as folhas baixas e at\xE9 mesmo dentro do solo nas
+    florestas tropicais.\\n\\nOcorre no nordeste do Brasil, na regi\xE3o litor\xE2nea
+    e matas de transi\xE7\xE3o."
+  reference: https://www.inaturalist.org/taxa/804212-Iridopelma-hirsutum#articles-tab
+  curiosities:
+  - "A colora\xE7\xE3o desta esp\xE9cie varia \xE0 medida que envelhecem. Assim que
+    nascem, apresentam uma carapa\xE7a escura com um brilho esverdeado em todo comprimento
+    de suas pernas, em forma de linhas horizontais."
+  - "Possuem longas cerdas urticantes, que s\xE3o lan\xE7adas pela aranha como parte
+    de um comportamento defensivo ativo contra os predadores dos vertebrados."
+  - "A alimenta\xE7\xE3o dos jovens desta esp\xE9cie \xE9 baseada em microgrilos
+    e ninfas de barata, para esp\xE9cimes adultos a dieta varia desde grilos, baratas
+    e gafanhotos."
+  reward: 1000
+  actions:
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 35
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 20
+    effectImage: {fileID: 21300000, guid: 1815ea71c4e799e45b0db8899c240c4a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: d00e68b1ba8dad14ba628e32224a6e02, type: 2}
+    value: 8
+    effectImage: {fileID: 21300000, guid: 8747fbd096b50834ab608c29a3c05bcc, type: 3}
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 2
+    effectImage: {fileID: 21300000, guid: 33a6203d7c3a9244ba0e334f4fe0ac3a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 5
+    effectImage: {fileID: 21300000, guid: 1815ea71c4e799e45b0db8899c240c4a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 5
+    effectImage: {fileID: 21300000, guid: 1815ea71c4e799e45b0db8899c240c4a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 5
+    effectImage: {fileID: 21300000, guid: 1815ea71c4e799e45b0db8899c240c4a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 15
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 15
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}

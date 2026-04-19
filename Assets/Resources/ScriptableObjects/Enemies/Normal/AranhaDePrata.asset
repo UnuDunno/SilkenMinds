@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
+  m_Name: AranhaDePrata
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  image: {fileID: -6702076477427534264, guid: fcff573f3ddee24439c9527e3c3aa9ae, type: 3}
+  spiderName: Aranha de Prata
+  cientificName: Argiope argentata
+  health: 45
+  description: "\tReside em prados, jardins e \xE1reas florestadas. Montam as suas
+    teias em arbustos e vegeta\xE7\xE3o pr\xF3xima do solo.\n\tDistribui-se desde
+    a Am\xE9rica do Norte, do sul da Fl\xF3rida e Calif\xF3rnia at\xE9 o Norte do
+    Chile, Argentina e Brasil, ocorrendo desde \xE1reas de altitude elevada at\xE9
+    o n\xEDvel do mar."
+  reference: https://www.inaturalist.org/taxa/67706-Argiope-argentata#articles-tab
+  curiosities: []
+  reward: 20
+  actions:
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 5
+    effectImage: {fileID: 21300000, guid: 1815ea71c4e799e45b0db8899c240c4a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 5
+    effectImage: {fileID: 21300000, guid: 1815ea71c4e799e45b0db8899c240c4a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 9
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: d00e68b1ba8dad14ba628e32224a6e02, type: 2}
+    value: 8
+    effectImage: {fileID: 21300000, guid: 8747fbd096b50834ab608c29a3c05bcc, type: 3}

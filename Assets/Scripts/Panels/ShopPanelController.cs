@@ -20,7 +20,7 @@ public class ShopPanelController : PanelController
         {
             GameObject cardContainer = Instantiate(shopContainerPrefab, cardsArea.transform);
             ShopContainer shopContainer = cardContainer.GetComponent<ShopContainer>();
-            shopContainer.PlaceCardOnShop();
+            shopContainer.PlaceCardOnShop(ChooseShopCard());
             shopContainer.AddListenerBuyButton(BuyCard);
 
             cardsInShop.Add(cardContainer);
@@ -37,9 +37,14 @@ public class ShopPanelController : PanelController
         Debug.Log("Health Restored");
     }
 
-    public void BuyCard()
+    public void BuyCard(CardData cardData)
     {
         Debug.Log("Card Bought");
+    }
+
+    public CardData ChooseShopCard()
+    {
+        return new CardData();
     }
 
     public override void ClosePanel()

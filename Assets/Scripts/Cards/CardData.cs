@@ -6,6 +6,7 @@ public struct Effect
 {
     public CardEffect cardEffect;
     public int value;
+    public Sprite effectImage;
 }
 
 
@@ -17,4 +18,5 @@ public class CardData : ScriptableObject
     public Sprite cardImage;
     public int fearValue;
     public List<Effect> effects;
+    public int cardPrice;
 }

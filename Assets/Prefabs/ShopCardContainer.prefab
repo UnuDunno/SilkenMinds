@@ -91,9 +91,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShopContainer
   cardContainer: {fileID: 8505485872515814658}
-  cardPriceButton: {fileID: 1891739347381232949}
   cardPrefab: {fileID: 2110216930602355601, guid: ae4b5f4f9fe405344932d02c738ddec5, type: 3}
   buyCardButton: {fileID: 1470285933223006286}
+  cardPrice: {fileID: 1891739347381232949}
+  coinImage: {fileID: 5798446745133080376}
 --- !u!1 &4466711481519430239
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,9 +246,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShopContainer
   cardContainer: {fileID: 8505485872515814658}
-  cardPriceButton: {fileID: 1891739347381232949}
   cardPrefab: {fileID: 0}
   buyCardButton: {fileID: 0}
+  cardPrice: {fileID: 0}
+  coinImage: {fileID: 0}
 --- !u!1 &5798446745133080376
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
+  m_Name: ViuvaMarrom
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  image: {fileID: -337318049729690209, guid: 51f0f98b0258c7e41913ecd893ddee58, type: 3}
+  spiderName: "Vi\xFAva Marrom"
+  cientificName: Latrodectus geometricus
+  health: 120
+  description: "Parente da conhecida Vi\xFAva Negra. A Vi\xFAva marrom tem listras
+    preto e branco nas laterais de seu abd\xF4men e nas patas, bem como uma marca\xE7\xE3o
+    em formato de ampulheta de cor amarelada.\\n\\nEncontradas em todo o mundo, mas
+    acredita-se que sejam origin\xE1rias da \xC1frica ou da Am\xE9rica do Sul."
+  reference: https://www.inaturalist.org/taxa/47383-Latrodectus-geometricus#articles-tab
+  curiosities:
+  - "As picadas de Vi\xFAva Marrom, geralmente s\xE3o muito menos perigosas que as
+    da Vi\xFAva Negra. Os efeitos da toxina geralmente ficam confinados \xE0 \xE1rea
+    da picada e aos tecidos circundantes."
+  reward: 50
+  actions:
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 25
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 10
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 10
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 3
+    effectImage: {fileID: 21300000, guid: 33a6203d7c3a9244ba0e334f4fe0ac3a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 1
+    effectImage: {fileID: 21300000, guid: 33a6203d7c3a9244ba0e334f4fe0ac3a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 1
+    effectImage: {fileID: 21300000, guid: 33a6203d7c3a9244ba0e334f4fe0ac3a, type: 3}

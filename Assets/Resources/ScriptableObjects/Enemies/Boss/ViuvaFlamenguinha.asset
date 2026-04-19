@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
+  m_Name: ViuvaFlamenguinha
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  image: {fileID: -7587032346183816794, guid: 606936bdb901244478938a5d039e4445, type: 3}
+  spiderName: "Vi\xFAva Flamenguinha"
+  cientificName: Latrodectus curacaviensis
+  health: 200
+  description: "N\xE3o \xE9 agressiva com seres humanos, se alimenta de pequenos
+    insetos e possui uma distinta marca no formato de ampulheta com um diamante negro
+    e quatro tri\xE2ngulos vermelhos em um quadrado.\\n\\nEncontrada nas regi\xF5es
+    centro-oeste e nordeste do Brasil."
+  reference: https://www.inaturalist.org/taxa/467606-Latrodectus-curacaviensis#articles-tab
+  curiosities:
+  - "O veneno cont\xE9m neurotoxinas excitat\xF3rias. As picadas geralmente injetam
+    pequenas quantidades de veneno, o que pode resultar em sintomas perigosos, principalmente
+    em crian\xE7as, idosos e pessoas com problemas cardiovasculares e respirat\xF3rios.
+    Os sintomas relatados incluem dor local intensa. Os sintomas sist\xEAmicos incluem
+    sudorese, respira\xE7\xE3o acelerada, aumento da frequ\xEAncia card\xEDaca, incha\xE7o
+    das p\xE1lpebras, saliva\xE7\xE3o, rigidez e dor nos m\xFAsculos abdominais,
+    n\xE1useas, v\xF4mitos e vis\xE3o turva."
+  reward: 1000
+  actions:
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 50
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 10
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 10
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 10
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 10
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 15
+    effectImage: {fileID: 21300000, guid: 1815ea71c4e799e45b0db8899c240c4a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 4
+    effectImage: {fileID: 21300000, guid: 33a6203d7c3a9244ba0e334f4fe0ac3a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 2
+    effectImage: {fileID: 21300000, guid: 33a6203d7c3a9244ba0e334f4fe0ac3a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 2
+    effectImage: {fileID: 21300000, guid: 33a6203d7c3a9244ba0e334f4fe0ac3a, type: 3}

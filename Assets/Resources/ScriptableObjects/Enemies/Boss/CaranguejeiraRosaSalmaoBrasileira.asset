@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
+  m_Name: CaranguejeiraRosaSalmaoBrasileira
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  image: {fileID: -5831100263502040423, guid: fb6777983e4a4e541b9afc3c7cc73ce2, type: 3}
+  spiderName: "Caranguejeira Rosa Salm\xE3o Brasileira"
+  cientificName: Lasiodora parahybana
+  health: 300
+  description: "De comportamento agressivo, n\xE3o representa contudo muitos riscos
+    ao homem adulto.\\n\\nOrigin\xE1ria da parte oriental do Nordeste Brasileiro,
+    onde \xE9 end\xEAmica."
+  reference: https://www.inaturalist.org/taxa/367113-Lasiodora-parahybana#articles-tab
+  curiosities:
+  - "As f\xEAmeas vivem de dez a quinze anos, e os machos correm o risco de morrer
+    na c\xF3pula, porque a f\xEAmea costuma com\xEA-los ap\xF3s o ato de acasalamento."
+  - "Chegam a medir at\xE9 25 cm de comprimento na idade adulta."
+  - "Podem comer baratas, gafanhotos, grilos, lagartixas, besouros, pequenos roedores,
+    al\xE9m de tamb\xE9m terem comportamento canibal\xEDstico."
+  - "Possui veneno relativamente fraco, incapaz de matar um homem adulto, e sua maior
+    amea\xE7a estaria nos pelos urticantes que a envolvem, embora tenha picada dolorosa,
+    em virtude do tamanho de suas longas quel\xEDceras."
+  reward: 1000
+  actions:
+  - cardEffect: {fileID: 11400000, guid: d00e68b1ba8dad14ba628e32224a6e02, type: 2}
+    value: 15
+    effectImage: {fileID: 21300000, guid: 8747fbd096b50834ab608c29a3c05bcc, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 15
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 15
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 20
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 10
+    effectImage: {fileID: 21300000, guid: 1815ea71c4e799e45b0db8899c240c4a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 2
+    effectImage: {fileID: 21300000, guid: 33a6203d7c3a9244ba0e334f4fe0ac3a, type: 3}

@@ -3,8 +3,17 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Effects/Restore Fear")]
 public class RestoreFear : CardEffect
 {
-    public override void ApplyEffect(Player player, EnemyData enemy)
+    public override void ApplyEffect(Player player, EnemyData enemy, Target target)
     {
-        player.IncreaseCurrentFear(amount);
+        switch(target)
+        {
+            case Target.Player:
+                player.IncreaseCurrentFear(amount);
+                break;
+            case Target.Enemy:
+                player.SetFearToRemove(amount);
+                break;
+
+        }
     }
 }

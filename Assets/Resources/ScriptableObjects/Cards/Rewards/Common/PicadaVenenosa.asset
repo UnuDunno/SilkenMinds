@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
+  m_Name: PicadaVenenosa
+  m_EditorClassIdentifier: Assembly-CSharp::CardData
+  cardName: Picada Venenosa
+  cardDescription: Causa 12 de dano
+  cardImage: {fileID: -4359929859856902302, guid: 0cc9f13c9e6d3a642a460f9583acd364, type: 3}
+  fearValue: 2
+  effects:
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 12
