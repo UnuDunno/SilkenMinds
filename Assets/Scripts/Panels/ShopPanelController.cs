@@ -1,20 +1,37 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ShopPanelController : PanelController
 {
+    [Header("Shop")]
     [SerializeField] private GameObject shopContainerPrefab;
     [SerializeField] private GameObject cardsArea;
+    [SerializeField] private TMP_Text healPriceText;
+    [SerializeField] private TMP_Text cardRemovePriceText;
 
-    private List<GameObject> cardsInShop;
+    [Header("Player")]
+    [SerializeField] private TMP_Text playerHealthText;
+    [SerializeField] private TMP_Text playerMoneyText;
 
     private int maxShopCards = 5;
+    private int healPrice = 250;
+    private int cardRemovePrice = 250;
+
+    private CardData[] commonCards;
+    private CardData[] epicCards;
+    private CardData[] legendaryCards;
 
     public override void ResetPanel(NodeType nodeType)
     {
         base.ResetPanel(nodeType);
 
-        cardsInShop = new List<GameObject>();
+        if(commonCards == null)
+        {
+            commonCards = Resources.LoadAll<CardData>($"{path_to_card_in_store}/Common");
+            epicCards = Resources.LoadAll<CardData>($"{path_to_card_in_store}/Epic");
+            legendaryCards = Resources.LoadAll<CardData>($"{path_to_card_in_store}/Lendaria");
+        }
 
         for(int i = 0; i < maxShopCards; i++)
         {
@@ -22,36 +39,56 @@ public class ShopPanelController : PanelController
             ShopContainer shopContainer = cardContainer.GetComponent<ShopContainer>();
             shopContainer.PlaceCardOnShop(ChooseShopCard());
             shopContainer.AddListenerBuyButton(BuyCard);
-
-            cardsInShop.Add(cardContainer);
         }
+
+        healPriceText.text = $"$ {healPrice}";
+        cardRemovePriceText.text = $"$ {cardRemovePrice}";
     }
 
     public void RemoveCardFromDeck()
     {
+        if (!(player.GetMoney() >= cardRemovePrice)) return;
+
         Debug.Log("Card Removed");
+
+        playerMoneyText.text = $"{player.GetMoney()}";
     }
 
     public void RestoreHealth()
     {
-        Debug.Log("Health Restored");
+        if (!(player.GetMoney() >= healPrice)) return;
+
+        player.Heal(player.GetMaxHealth());
+
+        playerHealthText.text = $"{player.GetCurrentHealth()}";
+        playerMoneyText.text = $"{player.GetMoney()}";
     }
 
     public void BuyCard(CardData cardData)
     {
-        Debug.Log("Card Bought");
+        if (!(player.GetMoney() >= cardData.cardPrice)) return;
+
+        player.AddCardToDeck(cardData);
+        player.DecreaseMoney(cardData.cardPrice);
+
+        playerMoneyText.text = $"{player.GetMoney()}";
     }
 
     public CardData ChooseShopCard()
     {
-        return new CardData();
+        float randomNumber = UnityEngine.Random.value;
+
+        if (randomNumber > rarityRates[Rarities.Legendary]) return legendaryCards[UnityEngine.Random.Range(0, legendaryCards.Length)];
+        if (randomNumber > rarityRates[Rarities.Epic]) return epicCards[UnityEngine.Random.Range(0, epicCards.Length)];
+
+        return commonCards[UnityEngine.Random.Range(0, commonCards.Length)];
     }
 
     public override void ClosePanel()
     {
-        foreach(GameObject card in cardsInShop)
+        foreach (Transform child in cardsArea.transform)
         {
-            Destroy(card);
+            Destroy(child.gameObject);
         }
 
         base.ClosePanel();

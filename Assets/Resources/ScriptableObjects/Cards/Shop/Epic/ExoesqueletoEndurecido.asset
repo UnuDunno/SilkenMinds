@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
-  m_Name: RajadaDeTeias
+  m_Name: ExoesqueletoEndurecido
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: Rajada de Teias
-  cardDescription: Causa 10 de dano
-  cardImage: {fileID: 1588043430295970633, guid: d3f31c40809250b4f8e0cba722a05af9, type: 3}
-  fearValue: 3
+  cardName: Exoesqueleto Endurecido
+  cardDescription: Ganhe 6 de defesa
+  cardImage: {fileID: 1486922097865487086, guid: 64e95a16e864a124591c913c74221493, type: 3}
+  fearValue: 1
   effects:
-  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
-    value: 10
-  cardPrice: 100
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 6
+    effectImage: {fileID: 0}
+  cardPrice: 75

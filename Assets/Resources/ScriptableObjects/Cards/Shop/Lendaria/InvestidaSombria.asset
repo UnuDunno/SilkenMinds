@@ -15,8 +15,9 @@ MonoBehaviour:
   cardName: Investida Sombria
   cardDescription: Cause 12 de dano
   cardImage: {fileID: 7088202542281611188, guid: 6ef0cc37b5e83a64b907d71717f74d62, type: 3}
-  fearValue: 3
+  fearValue: 1
   effects:
   - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
     value: 12
+    effectImage: {fileID: 0}
   cardPrice: 100

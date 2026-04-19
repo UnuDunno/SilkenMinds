@@ -4997,6 +4997,10 @@ MonoBehaviour:
   player: {fileID: 1004688839}
   shopContainerPrefab: {fileID: 3126821809213959900, guid: bac9829627a3df54e9d965d773caf241, type: 3}
   cardsArea: {fileID: 1169515950}
+  healPriceText: {fileID: 2140303049}
+  cardRemovePriceText: {fileID: 716016365}
+  playerHealthText: {fileID: 895735601}
+  playerMoneyText: {fileID: 1829164364}
 --- !u!1 &1392144879
 GameObject:
   m_ObjectHideFlags: 0

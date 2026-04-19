@@ -49,9 +49,9 @@ public class CombatPanelController : PanelController
     private int maxRewardCards = 3;
 
     // CARDS
-    private List<CardData> commonRewards;
-    private List<CardData> epicRewards;
-    private List<CardData> legendaryRewards;
+    private CardData[] commonRewards;
+    private CardData[] epicRewards;
+    private CardData[] legendaryRewards;
 
     private NodeType nodeType;
     private int enemyCurrentHealth;
@@ -83,9 +83,9 @@ public class CombatPanelController : PanelController
             eliteEnemies = Resources.LoadAll<EnemyData>($"{path_to_enemies}/Elite");
             bossEnemies = Resources.LoadAll<EnemyData>($"{path_to_enemies}/Boss");
 
-            commonRewards = new List<CardData>(Resources.LoadAll<CardData>($"{path_to_card_rewards}/Common"));
-            epicRewards = new List<CardData>(Resources.LoadAll<CardData>($"{path_to_card_rewards}/Epic"));
-            legendaryRewards = new List<CardData>(Resources.LoadAll<CardData>($"{path_to_card_rewards}/Lendaria"));
+            commonRewards = Resources.LoadAll<CardData>($"{path_to_card_rewards}/Common");
+            epicRewards = Resources.LoadAll<CardData>($"{path_to_card_rewards}/Epic");
+            legendaryRewards = Resources.LoadAll<CardData>($"{path_to_card_rewards}/Lendaria");
         }
 
         SetEnemy();
@@ -271,23 +271,14 @@ public class CombatPanelController : PanelController
     {
         rewardText.text = $"Ignorar Cartas\n(Receber <color=#EFBF04>$ {enemyArea.GetComponent<EnemyArea>().GetEnemyData().GetReward()}</color>)";
 
-        List<CardData> shopCards = new List<CardData>();
-        for (int i = 0; i < maxRewardCards; i++)
-        {
-            shopCards.Add(ChooseCardReward());
-        }
-
-        List<ShopContainer> debug = new List<ShopContainer>();
         for (int i = 0; i < maxRewardCards; i++)
         {
             GameObject cardContainer = Instantiate(rewardContainerPrefab, cardsArea.transform);
             ShopContainer shopContainer = cardContainer.GetComponent<ShopContainer>();
-            shopContainer.PlaceCardOnShop(shopCards[i]);
+            shopContainer.PlaceCardOnShop(ChooseCardReward());
             shopContainer.AddListenerBuyButton(AddCardToDeck);
             shopContainer.DeactivateCoinIcon();
             shopContainer.ChangeCardPrice("OBTER", color: "FFFFFF");
-
-            debug.Add(shopContainer);
         }
 
         EmptyPlayerHand();
@@ -320,15 +311,15 @@ public class CombatPanelController : PanelController
     {
         float randomValue = UnityEngine.Random.value;
 
-        if (randomValue > 0.99f)
+        if (randomValue > rarityRates[Rarities.Legendary])
         {
-            return legendaryRewards[UnityEngine.Random.Range(0, legendaryRewards.Count)];
-        } else if (randomValue > 0.80f)
+            return legendaryRewards[UnityEngine.Random.Range(0, legendaryRewards.Length)];
+        } else if (randomValue > rarityRates[Rarities.Epic])
         {
-            return epicRewards[UnityEngine.Random.Range(0, epicRewards.Count)];
+            return epicRewards[UnityEngine.Random.Range(0, epicRewards.Length)];
         }
 
-        return commonRewards[UnityEngine.Random.Range(0, commonRewards.Count)];
+        return commonRewards[UnityEngine.Random.Range(0, commonRewards.Length)];
     }
 
     public void UpdateUI()

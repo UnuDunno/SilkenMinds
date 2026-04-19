@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
-  m_Name: ReflexosAracnideos
+  m_Name: BanqueteMacabro
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: "Reflexos Aracn\xEDdeos"
-  cardDescription: Ganhe 4 de defesa
-  cardImage: {fileID: 7931522862851837989, guid: 63f89f875c6507842a3b821b5480e21d, type: 3}
-  fearValue: 1
+  cardName: Banquete Macabro
+  cardDescription: Cure 6 de vida
+  cardImage: {fileID: 1202251230980706805, guid: 633485d8166e7574abd9435d242fa198, type: 3}
+  fearValue: 2
   effects:
-  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
-    value: 4
-  cardPrice: 100
+  - cardEffect: {fileID: 11400000, guid: d00e68b1ba8dad14ba628e32224a6e02, type: 2}
+    value: 6
+    effectImage: {fileID: 0}
+  cardPrice: 50

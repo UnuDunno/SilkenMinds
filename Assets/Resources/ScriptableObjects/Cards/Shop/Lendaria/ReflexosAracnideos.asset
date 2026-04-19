@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
-  m_Name: ExoesqueletoEndurecido
+  m_Name: ReflexosAracnideos
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: Exoesqueleto Endurecido
-  cardDescription: Ganhe 6 de defesa
-  cardImage: {fileID: 1486922097865487086, guid: 64e95a16e864a124591c913c74221493, type: 3}
-  fearValue: 2
+  cardName: "Reflexos Aracn\xEDdeos"
+  cardDescription: Ganhe 4 de defesa
+  cardImage: {fileID: 7931522862851837989, guid: 63f89f875c6507842a3b821b5480e21d, type: 3}
+  fearValue: 0
   effects:
   - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
-    value: 6
+    value: 4
+    effectImage: {fileID: 0}
   cardPrice: 100

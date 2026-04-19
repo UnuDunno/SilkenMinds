@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
-  m_Name: MordidaVenenosa
+  m_Name: EspiarNasSombras
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: Mordida Venenosa
-  cardDescription: Causa 9 de dano
-  cardImage: {fileID: 151841351665093490, guid: 66e26e5d4f9f1494f89b92036bc77921, type: 3}
-  fearValue: 2
+  cardName: Espiar nas Sombras
+  cardDescription: Compre 3 cartas
+  cardImage: {fileID: -2030683266877877375, guid: 8b05da12db611864f952977d51ff9c05, type: 3}
+  fearValue: 1
   effects:
-  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
-    value: 9
-  cardPrice: 100
+  - cardEffect: {fileID: 11400000, guid: da4cf339ca0867a4bb08332d0e9ddae6, type: 2}
+    value: 3
+    effectImage: {fileID: 0}
+  cardPrice: 75

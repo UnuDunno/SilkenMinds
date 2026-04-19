@@ -1,5 +1,13 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+
+public enum Rarities
+{
+    Legendary,
+    Epic,
+    Common
+}
 
 public class PanelController : MonoBehaviour
 {
@@ -10,7 +18,16 @@ public class PanelController : MonoBehaviour
 
     private static readonly string path_to_scriptable_objects = "ScriptableObjects";
     protected readonly string path_to_enemies = $"{path_to_scriptable_objects}/Enemies";
-    protected readonly string path_to_card_rewards = $"{path_to_scriptable_objects}/Cards/Rewards";
+
+    private static readonly string path_to_cards = $"{path_to_scriptable_objects}/Cards";
+    protected readonly string path_to_card_rewards = $"{path_to_cards}/Rewards";
+    protected readonly string path_to_card_in_store = $"{path_to_cards}/Shop";
+
+    protected readonly Dictionary<Rarities, float> rarityRates = new Dictionary<Rarities, float> {
+        {Rarities.Legendary, 0.99f},
+        {Rarities.Epic, 0.75f}
+    };
+
 
     public virtual void ResetPanel(NodeType nodeType)
     {
