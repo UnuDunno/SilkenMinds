@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     [SerializeField] private int money;
     [SerializeField] private int maxFear;
 
-    [SerializeField] private float healthRegeneration;
+    [SerializeField] private float healthRegeneration = 0.3f;
 
     private int currentHealth;
     private int currentFear;
@@ -70,6 +70,10 @@ public class Player : MonoBehaviour
         currentHealth += increment;
     }
 
+    public float GetHealthRegeneration()
+    {
+        return healthRegeneration;
+    }
 
     // ********** FEAR **********
     public int GetMaxFear()

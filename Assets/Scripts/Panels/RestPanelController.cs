@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class RestPanelController : PanelController
 {
@@ -11,7 +12,9 @@ public class RestPanelController : PanelController
 
     public void RestoreHealth()
     {
-        Debug.Log("Health Restored!");
+        int healAmount = (int)Math.Ceiling(player.GetMaxHealth() * player.GetHealthRegeneration());
+
+        player.Heal(healAmount);
 
         ClosePanel();
     }
