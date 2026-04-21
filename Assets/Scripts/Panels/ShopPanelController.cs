@@ -13,6 +13,7 @@ public class ShopPanelController : PanelController
     [Header("Player")]
     [SerializeField] private TMP_Text playerHealthText;
     [SerializeField] private TMP_Text playerMoneyText;
+    [SerializeField] private GameObject deckPanel;
 
     private int maxShopCards = 5;
     private int healPrice = 250;
@@ -49,9 +50,18 @@ public class ShopPanelController : PanelController
     {
         if (!(player.GetMoney() >= cardRemovePrice)) return;
 
-        Debug.Log("Card Removed");
+        deckPanel.GetComponent<DeckPanelController>().OpenPanelFromShop(RemoveCardAction);
+    }
 
+    private void RemoveCardAction(DeckCardContainer deckCardContainer)
+    {
+        CardData cardData = deckCardContainer.GetCardData();
+        player.DecreaseMoney(cardRemovePrice);
         playerMoneyText.text = $"{player.GetMoney()}";
+
+        deckPanel.GetComponent<DeckPanelController>().RemoveCardFromDeck(deckCardContainer);
+
+        deckPanel.GetComponent<DeckPanelController>().ColsePanelFromShop();
     }
 
     public void RestoreHealth()

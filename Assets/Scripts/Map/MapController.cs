@@ -40,7 +40,6 @@ public class MapController : MonoBehaviour
         targetZoom = mainCamera.orthographicSize;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start() 
     {
         map = new List<List<GameObject>>();
@@ -49,7 +48,6 @@ public class MapController : MonoBehaviour
         UpdatePlayerUI();
     }
 
-    // Update is called once per frame
     void Update() 
     {
         mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, targetZoom, Time.deltaTime * smoothSpeed);

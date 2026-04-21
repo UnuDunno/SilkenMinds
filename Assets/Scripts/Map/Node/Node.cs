@@ -129,7 +129,7 @@ public class Node : MonoBehaviour
         }
 
         MapController mapController = FindFirstObjectByType<MapController>();
-        if(mapController) mapController.DeactivateLayer(layer);
+        if (mapController) mapController.DeactivateLayer(layer);
 
         state = NodeState.Completed;
 

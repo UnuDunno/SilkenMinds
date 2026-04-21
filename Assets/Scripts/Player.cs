@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
 
     [SerializeField] private float healthRegeneration = 0.3f;
 
+    [SerializeField] private DeckPanelController deckPanel;
+
     private int currentHealth;
     private int currentFear;
     private int currentDefense;
@@ -171,22 +173,22 @@ public class Player : MonoBehaviour
             switch(cardData.cardName.ToLower())
             {
                 case "bloqueio":
-                    for(int i = 0; i < 6; i++) startingDeck.Add(cardData);
+                    for(int i = 0; i < 6; i++) AddCardToDeck(cardData);
                     break;
                 case "golpe":
-                    for (int i = 0; i < 6; i++) startingDeck.Add(cardData);
+                    for (int i = 0; i < 6; i++) AddCardToDeck(cardData);
                     break;
                 case "investida":
-                    for (int i = 0; i < 2; i++) startingDeck.Add(cardData);
+                    for (int i = 0; i < 2; i++) AddCardToDeck(cardData);
                     break;
                 case "olhos de caçador":
-                    for (int i = 0; i < 2; i++) startingDeck.Add(cardData);
+                    for (int i = 0; i < 2; i++) AddCardToDeck(cardData);
                     break;
                 case "teia da vida":
-                    for (int i = 0; i < 2; i++) startingDeck.Add(cardData);
+                    for (int i = 0; i < 2; i++) AddCardToDeck(cardData);
                     break;
                 case "teia protetora":
-                    for (int i = 0; i < 2; i++) startingDeck.Add(cardData);
+                    for (int i = 0; i < 2; i++) AddCardToDeck(cardData);
                     break;
                 default:
                     Debug.Log($"Unexpected card in the starting deck: {cardData.cardName}");
@@ -218,5 +220,11 @@ public class Player : MonoBehaviour
     public void AddCardToDeck(CardData card)
     {
         startingDeck.Add(card);
+        deckPanel.AddCardToDeck(card);
+    }
+
+    public void RemoveCardFromDeck(CardData card)
+    {
+        startingDeck.Remove(card);
     }
 }

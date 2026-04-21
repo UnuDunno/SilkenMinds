@@ -121,14 +121,15 @@ public class MapCreator : MonoBehaviour
 
     private void ConnectLayer(List<GameObject> layer, float connectionPercentage)
     {
-        float randomValue = UnityEngine.Random.value;
-
+        float randomValue;
         GameObject currentNode, nextNode;
+
         for (int i = 0; i < layer.Count; i++)
         {
             currentNode = layer[i];
             nextNode = (i == layer.Count - 1) ? layer[0] : layer[i + 1];
 
+            randomValue = UnityEngine.Random.value;
             if (randomValue <= connectionPercentage)
             {
                 CreateEdge(currentNode, nextNode);
@@ -139,10 +140,10 @@ public class MapCreator : MonoBehaviour
 
     private void ConnectNextLayer(List<GameObject> currentLayer, List<GameObject> nextLayer, float connectionPercentage)
     {
-        float randomValue = UnityEngine.Random.value;
-
+        float randomValue;
         GameObject currentLayerNode, nextLayerNextNode1, nextLayerNextNode2;
         List<GameObject> OrderedNextLayer;
+
         for (int i = 0; i < currentLayer.Count; i++)
         {
             currentLayerNode = currentLayer[i];
@@ -155,6 +156,7 @@ public class MapCreator : MonoBehaviour
             CreateEdge(currentLayerNode, nextLayerNextNode1);
             currentLayerNode.GetComponent<Node>().AddNext(nextLayerNextNode1);
 
+            randomValue = UnityEngine.Random.value;
             if (randomValue <= connectionPercentage)
             {
                 CreateEdge(currentLayerNode, nextLayerNextNode2);
