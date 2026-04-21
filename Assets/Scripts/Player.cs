@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     private static readonly string path_to_scriptable_objects = "ScriptableObjects";
     private readonly string path_to_main_deck_cards = $"{path_to_scriptable_objects}/Cards/MainDeck";
 
-
+    private Stack<string> inputSequence = new Stack<string>();
     private void Start()
     {
         maxHealth = 30;
@@ -226,5 +226,21 @@ public class Player : MonoBehaviour
     public void RemoveCardFromDeck(CardData card)
     {
         startingDeck.Remove(card);
+    }
+
+    // ********** INPUT **********
+    public void AddInput(string inputName)
+    {
+        inputSequence.Push(inputName);
+    }
+
+    public string RemoveInput()
+    {
+        return inputSequence.Pop();
+    }
+
+    public bool EmptyInput()
+    {
+        return inputSequence.Count == 0;
     }
 }

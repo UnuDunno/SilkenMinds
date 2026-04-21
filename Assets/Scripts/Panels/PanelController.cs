@@ -29,9 +29,11 @@ public class PanelController : MonoBehaviour
         {Rarities.Epic, 0.75f}
     };
 
-
     public virtual void ResetPanel(NodeType nodeType)
     {
+        if (player.EmptyInput()) player.AddInput("Map");
+        else player.AddInput("Panel");
+        
         playerInput.SwitchCurrentActionMap("Panel");
     }
 
@@ -39,7 +41,7 @@ public class PanelController : MonoBehaviour
     {
         if (panel == null) return;
 
-        playerInput.SwitchCurrentActionMap("Map");
+        playerInput.SwitchCurrentActionMap(player.RemoveInput());
         panel.SetActive(false);
     }
 }

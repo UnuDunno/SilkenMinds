@@ -3,9 +3,9 @@ using System;
 
 public class RestPanelController : PanelController
 {
-    public void RemoveCardFromDeck()
+    public void IncreaseFear()
     {
-        Debug.Log("Card Removed");
+        player.IncreaseMaxFear(1);
 
         ClosePanel();
     }
