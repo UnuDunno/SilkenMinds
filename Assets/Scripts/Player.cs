@@ -25,11 +25,12 @@ public class Player : MonoBehaviour
     private readonly string path_to_main_deck_cards = $"{path_to_scriptable_objects}/Cards/MainDeck";
 
     private Stack<string> inputSequence = new Stack<string>();
+
     private void Start()
     {
         maxHealth = 30;
         handSize = 5;
-        money = 100;
+        money = 500;
         maxFear = 5;
 
         CreateStartingDeck();

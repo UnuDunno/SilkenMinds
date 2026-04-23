@@ -55,7 +55,6 @@ public class ShopPanelController : PanelController
 
     private void RemoveCardAction(DeckCardContainer deckCardContainer)
     {
-        CardData cardData = deckCardContainer.GetCardData();
         player.DecreaseMoney(cardRemovePrice);
         playerMoneyText.text = $"{player.GetMoney()}";
 
@@ -66,11 +65,15 @@ public class ShopPanelController : PanelController
 
     public void RestoreHealth()
     {
-        if (!(player.GetMoney() >= healPrice)) return;
+        int currentHealth = player.GetCurrentHealth();
+        int maxHealth = player.GetMaxHealth();
 
-        player.Heal(player.GetMaxHealth());
+        if (currentHealth == maxHealth || !(player.GetMoney() >= healPrice)) return;
 
-        playerHealthText.text = $"{player.GetCurrentHealth()}";
+        player.Heal(maxHealth);
+        player.DecreaseMoney(healPrice);
+
+        playerHealthText.text = $"{currentHealth}/{maxHealth}";
         playerMoneyText.text = $"{player.GetMoney()}";
     }
 

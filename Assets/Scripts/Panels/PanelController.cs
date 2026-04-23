@@ -24,6 +24,10 @@ public class PanelController : MonoBehaviour
     protected readonly string path_to_card_rewards = $"{path_to_cards}/Rewards";
     protected readonly string path_to_card_in_store = $"{path_to_cards}/Shop";
 
+    private static readonly string path_to_events = $"{path_to_scriptable_objects}/Events";
+    protected readonly string path_to_curiosity_events = $"{path_to_events}/Curiosity";
+    protected readonly string path_to_choice_events = $"{path_to_events}/Choice";
+
     protected readonly Dictionary<Rarities, float> rarityRates = new Dictionary<Rarities, float> {
         {Rarities.Legendary, 0.99f},
         {Rarities.Epic, 0.75f}

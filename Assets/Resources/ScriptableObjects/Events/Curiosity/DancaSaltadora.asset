@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b0509b52fa57045bd73223092f6d1b, type: 3}
+  m_Name: DancaSaltadora
+  m_EditorClassIdentifier: Assembly-CSharp::CuriosityEvent
+  eventTitle: "Dan\xE7arinas de Oito Patas"
+  eventDescription: "Muitas aranhas-saltadoras (as \"papa-moscas\") n\xE3o conseguem
+    ouvir, mas s\xE3o muito sens\xEDveis a vibra\xE7\xF5es? Os machos realizam uma
+    dan\xE7a complexa e r\xEDtmica para cortejar as f\xEAmeas, quase como um 'sapateado',
+    para provar que s\xE3o um parceiro, e n\xE3o uma presa."
+  outcome: 0
+  outcomeAmount: 50

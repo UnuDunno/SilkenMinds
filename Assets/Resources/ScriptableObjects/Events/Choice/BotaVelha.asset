@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce4cc4c9b8c7bc46a073f480202eaff, type: 3}
+  m_Name: BotaVelha
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceEvent
+  eventTitle: A Bota na Varanda
+  eventDescription: "Voc\xEA v\xEA sua bota de jardinagem velha deixada do lado de
+    fora. Est\xE1 escura l\xE1 dentro. Voc\xEA se lembra de ter visto uma pequena
+    aranha marrom por perto mais cedo."
+  choice1: "Ignorar. Cal\xE7ar a bota."
+  outcome1: 3
+  amount1: 5
+  outcome1Title: Cuidado
+  outcome1Text: "Ai! Havia algo l\xE1 dentro. Voc\xEA sente uma picada aguda no p\xE9
+    e toma 5 de dano."
+  choice2: Pegar a bota e sacudi-la primeiro.
+  outcome2: 2
+  amount2: 1
+  outecome2Title: Boa Escolha
+  outcome2Text: "Voc\xEA vira a bota e uma pequena aranha inofensiva cai, correndo
+    para longe. Voc\xEA sai ileso."

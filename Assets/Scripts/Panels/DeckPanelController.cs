@@ -37,11 +37,22 @@ public class DeckPanelController : PanelController
 
     public void RemoveCardFromDeck(DeckCardContainer cardContainer)
     {
+        if (deckCards.Count <= 0) return;
+
         player.RemoveCardFromDeck(cardContainer.GetCardData());
 
         deckCards.Remove(cardContainer);
 
         cardContainer.RemoveCardContainer();
+    }
+
+    public void RemoveRandomCardFromDeck()
+    {
+        if (deckCards.Count <= 0) return;
+
+        DeckCardContainer cardContainer = deckCards[UnityEngine.Random.Range(0, deckCards.Count)];
+
+        RemoveCardFromDeck(cardContainer);
     }
 
     public void ActivateAllRemoveButtons(UnityAction<DeckCardContainer> action)

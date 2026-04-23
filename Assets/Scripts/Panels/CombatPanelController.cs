@@ -64,6 +64,8 @@ public class CombatPanelController : PanelController
     private List<CardData> discardPile;
     private List<CardData> combatDeck;
 
+    private readonly int noCardMoneyRewardMultiplier = 2;
+
     public override void ResetPanel(NodeType nodeType)
     {
         base.ResetPanel(nodeType);
@@ -269,7 +271,8 @@ public class CombatPanelController : PanelController
 
     public void Victory()
     {
-        rewardText.text = $"Ignorar Cartas\n(Receber <color=#EFBF04>$ {enemyArea.GetComponent<EnemyArea>().GetEnemyData().GetReward()}</color>)";
+        int moneyReward = enemyArea.GetComponent<EnemyArea>().GetEnemyData().GetReward();
+        rewardText.text = $"Ignorar Cartas\n(Receber <color=#EFBF04>$ {moneyReward * noCardMoneyRewardMultiplier}</color>)";
 
         for (int i = 0; i < maxRewardCards; i++)
         {
@@ -282,6 +285,9 @@ public class CombatPanelController : PanelController
         }
 
         EmptyPlayerHand();
+
+        player.IncreaseMoney(moneyReward);
+        playerMoney.text = $"{player.GetMoney()}";
 
         victoryScreen.SetActive(true);
     }
@@ -300,7 +306,7 @@ public class CombatPanelController : PanelController
 
     public void GetMoneyReward()
     {
-        player.IncreaseMoney(enemyArea.GetComponent<EnemyArea>().GetEnemyData().GetReward());
+        player.IncreaseMoney(enemyArea.GetComponent<EnemyArea>().GetEnemyData().GetReward() * noCardMoneyRewardMultiplier);
 
         playerMoney.text = $"{player.GetMoney()}";
 
