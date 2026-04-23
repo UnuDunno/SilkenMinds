@@ -4675,6 +4675,8 @@ MonoBehaviour:
   curiosityEventPanel: {fileID: 1035737848}
   choiceEventPanel: {fileID: 929086516}
   deckPanelController: {fileID: 597374857}
+  playerHealthText: {fileID: 895735601}
+  playerMoneyText: {fileID: 1829164364}
 --- !u!1 &1014535233
 GameObject:
   m_ObjectHideFlags: 0

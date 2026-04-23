@@ -271,6 +271,8 @@ public class CombatPanelController : PanelController
 
     public void Victory()
     {
+        if (nodeType == NodeType.Boss) SceneManager.LoadScene("VictoryScene");
+
         int moneyReward = enemyArea.GetComponent<EnemyArea>().GetEnemyData().GetReward();
         rewardText.text = $"Ignorar Cartas\n(Receber <color=#EFBF04>$ {moneyReward * noCardMoneyRewardMultiplier}</color>)";
 

@@ -1,5 +1,7 @@
 using UnityEngine;
 using System;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public enum EventType
 {
@@ -17,6 +19,8 @@ public class EventPanelController : PanelController
 
     [Header("General")]
     [SerializeField] private DeckPanelController deckPanelController;
+    [SerializeField] private TMP_Text playerHealthText;
+    [SerializeField] private TMP_Text playerMoneyText;
 
     private CuriosityEvent[] curiosityEvents;
     private ChoiceEvent[] choiceEvents;
@@ -58,15 +62,18 @@ public class EventPanelController : PanelController
         {
             case Outcome.IncreaseMoney:
                 player.IncreaseMoney(amount);
+                playerMoneyText.text = $"{player.GetMoney()}";
                 break;
             case Outcome.IncreaseMaxFear:
                 player.IncreaseMaxFear(amount);
                 break;
             case Outcome.IncreaseMaxHealth:
                 player.IncreaseMaxHealth(amount);
+                playerHealthText.text = $"{player.GetCurrentHealth()}/{player.GetMaxHealth()}";
                 break;
             case Outcome.Damage:
                 player.TakeDamage(amount);
+                if (player.GetCurrentHealth() <= 0) SceneManager.LoadScene("DefeatScene");
                 break;
             case Outcome.LoseCard:
                 for (int i = 0; i < amount; i++) deckPanelController.RemoveRandomCardFromDeck();
