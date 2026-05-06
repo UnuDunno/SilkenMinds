@@ -22,6 +22,7 @@ public class ShopContainer : MonoBehaviour
         Card card = cardGO.GetComponent<Card>();
         card.SetCardData(cardData);
         card.SetContainer(cardGO);
+        card.NotDraggable();
 
         cardPrice.text = $"$ {cardData.cardPrice}";
 

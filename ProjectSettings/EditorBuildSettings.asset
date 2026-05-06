@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartingMenuScene.unity
+    guid: 8949199de637cc74f98e2f3fd5d22b0e
+  - enabled: 1
     path: Assets/Scenes/MapScene.unity
     guid: 44dcee15b85a0b2438c28a8ab4a15e13
   - enabled: 1
@@ -14,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VictoryScene.unity
     guid: d63f7ec5a74507e4b85e5d377b41399f
+  - enabled: 1
+    path: Assets/Scenes/FeedbackScene.unity
+    guid: fd17069504d51064e947ee465ca80186
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: 770e894864ecca54681ad05c3151a31d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

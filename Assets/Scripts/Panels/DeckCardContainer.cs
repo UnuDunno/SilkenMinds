@@ -21,6 +21,7 @@ public class DeckCardContainer : MonoBehaviour
 
         newCard.SetCardData(cardData);
         newCard.SetContainer(cardGO);
+        newCard.NotDraggable();
 
         card = newCard;
     }

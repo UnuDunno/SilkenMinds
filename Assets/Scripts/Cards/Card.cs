@@ -15,19 +15,26 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     
     // ---  Drag  ---
     private Vector3 origin;
+    private bool draggable = true;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (!draggable) return;
+
         origin = transform.position;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
+        if (!draggable) return;
+
         transform.position += (Vector3)eventData.delta;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (!draggable) return;
+
         cardCollider.enabled = false;
         Collider2D hitCollider = Physics2D.OverlapPoint(transform.position);
         cardCollider.enabled = true;
@@ -68,6 +75,12 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     {
         this.container = container;
     }
+
+    public void NotDraggable()
+    {
+        draggable = false;
+    }
+
 
     public void DestroyCard()
     {
