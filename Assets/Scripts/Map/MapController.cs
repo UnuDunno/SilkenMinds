@@ -45,6 +45,10 @@ public class MapController : MonoBehaviour
         map = new List<List<GameObject>>();
         mapCreator.GenerateMap(map, initialRadius, layers, layerMultiplier, radiusIncrement);
 
+        Vector3 randomLastLayerNode = map[^1][0].transform.position;
+
+        mainCamera.transform.position = new Vector3(randomLastLayerNode.x, randomLastLayerNode.y, -10);
+
         UpdatePlayerUI();
     }
 

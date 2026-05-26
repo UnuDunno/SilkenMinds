@@ -16,16 +16,24 @@ MonoBehaviour:
   spiderName: Aranha de Grama
   cientificName: Lycosa erythrognatha
   health: 96
-  description: "Bastante confundida pela popula\xE7\xE3o com a aranha armadeira,
-    por tamb\xE9m apresentar o display de defesa com patas levantadas quando s\xE3o
-    intimidadas.\\n\\nPodem ser encontradas predominantemente nas regi\xF5es sul
-    e sudeste do Brasil, bem como no Distrito Federal."
+  description: "\xC9 uma aranha de porte m\xE9dio a grande, com as f\xEAmeas adultas
+    atingindo de 2 a 3 cent\xEDmetros de corpo (e at\xE9 7 cent\xEDmetros de envergadura
+    total incluindo as pernas). Sua colora\xE7\xE3o \xE9 predominantemente cinza
+    ou marrom-clara.\\n\\n\xC9 venenosa, mas n\xE3o \xE9 considerada perigosa ou
+    de import\xE2ncia m\xE9dica grave."
   reference: https://www.inaturalist.org/taxa/83111-Lycosa-erythrognatha#articles-tab
   curiosities:
   - "Acidentes causados provocam dor discreta e transit\xE1ria no local da picada.
     Incha\xE7o e vermelhid\xE3o leves s\xE3o descritos em menos de 20% dos casos.
     O tratamento, geralmente, n\xE3o \xE9 necess\xE1rio. Eventualmente a dor poder\xE1
     ser controlada com o uso de analg\xE9sicos orais."
+  - "A f\xEAmea carrega o seu saco de ovos preso \xE0s fiandeiras na parte traseira
+    do corpo para onde quer que v\xE1. Quando os filhotes nascem, eles sobem todos
+    de uma vez no dorso (costas) da m\xE3e, que passa semanas carregando centenas
+    de pequenas aranhas at\xE9 que estejam prontas para se espalhar."
+  - "or serem grandes, peludas e r\xE1pidas, assustam muitas pessoas dentro de casa.
+    No entanto, elas s\xE3o excelentes controladoras de pragas e ajudam a manter
+    os quintais limpos de insetos indesejados."
   reward: 50
   actions:
   - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}

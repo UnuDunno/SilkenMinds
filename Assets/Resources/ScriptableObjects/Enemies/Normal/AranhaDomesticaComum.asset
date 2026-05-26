@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
+  m_Name: AranhaDomesticaComum
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  image: {fileID: -3010095091960611763, guid: e039f354a0b8b17429c0fdf88d5f3ff3, type: 3}
+  spiderName: "Aranha Dom\xE9stica Comum"
+  cientificName: Parasteatoda tepidariorum
+  health: 40
+  description: "\xC9 uma aranha que vive associada a habita\xE7\xF5es humanas, de
+    porte pequeno a m\xE9dio, onde as f\xEAmeas medem entre 5 e 8 mm de corpo e os
+    machos s\xE3o menores (cerca de 4 mm).\\n\\nmbora possua veneno para paralisar
+    as suas presas e perten\xE7a \xE0 mesma fam\xEDlia das vi\xFAvas-negras (Theridiidae),
+    o seu veneno \xE9 de toxicidade extremamente baixa para os seres humanos."
+  reference: https://www.inaturalist.org/taxa/120583-Parasteatoda-tepidariorum
+  curiosities:
+  - "Ao contr\xE1rio de muitas esp\xE9cies de aranhas que s\xE3o estritamente solit\xE1rias
+    e canibais, machos e f\xEAmeas dessa esp\xE9cie frequentemente compartilham a
+    mesma teia por longos per\xEDodos antes e depois do acasalamento, chegando at\xE9
+    a dividir as mesmas presas capturadas."
+  reward: 20
+  actions:
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 10
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 8
+    effectImage: {fileID: 21300000, guid: 1815ea71c4e799e45b0db8899c240c4a, type: 3}

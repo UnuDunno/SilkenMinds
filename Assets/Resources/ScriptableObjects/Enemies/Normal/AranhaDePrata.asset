@@ -16,13 +16,18 @@ MonoBehaviour:
   spiderName: Aranha de Prata
   cientificName: Argiope argentata
   health: 45
-  description: "\tReside em prados, jardins e \xE1reas florestadas. Montam as suas
-    teias em arbustos e vegeta\xE7\xE3o pr\xF3xima do solo.\n\tDistribui-se desde
-    a Am\xE9rica do Norte, do sul da Fl\xF3rida e Calif\xF3rnia at\xE9 o Norte do
-    Chile, Argentina e Brasil, ocorrendo desde \xE1reas de altitude elevada at\xE9
-    o n\xEDvel do mar."
+  description: "Destaca-se pelo seu abd\xF4men de formato l\xF3bulo e uma colora\xE7\xE3o
+    prateada espelhada na parte superior, que contrasta com listras amarelas, pretas
+    e marrons na parte inferior. Existe um dimorfismo sexual extremo: as f\xEAmeas
+    s\xE3o grandes e imponentes, chegando a medir cerca de 1,5 cm de corpo, enquanto
+    os machos s\xE3o an\xF5es, medindo raramente mais de 4 mil\xEDmetros.\\n\\nS\xE3o
+    amplamente distribu\xEDdas pelas Am\xE9ricas (do sul dos EUA at\xE9 a Argentina)
+    e adoram construir suas teias em \xE1reas abertas e ensolaradas, como arbustos,
+    gramados e hortas.\\n\\nN\xE3o oferecem perigo aos seres humanos"
   reference: https://www.inaturalist.org/taxa/67706-Argiope-argentata#articles-tab
-  curiosities: []
+  curiosities:
+  - Possuem estruturas de seda branca muito grossas em formato de "X" ou zig-zag
+    no centro da teia.
   reward: 20
   actions:
   - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}

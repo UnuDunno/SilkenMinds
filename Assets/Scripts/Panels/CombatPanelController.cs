@@ -299,7 +299,7 @@ public class CombatPanelController : PanelController
         SceneManager.LoadScene("DefeatScene");
     }
 
-    public void AddCardToDeck(CardData cardData)
+    public void AddCardToDeck(CardData cardData, Button button)
     {
         player.AddCardToDeck(cardData);
 

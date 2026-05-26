@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce4cc4c9b8c7bc46a073f480202eaff, type: 3}
+  m_Name: Ameaca
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceEvent
+  eventTitle: "Amea\xE7a?"
+  eventDescription: "Se voc\xEA encontrar uma aranha grande (como uma caranguejeira)
+    andando pela parede da sua sala, qual \xE9 a atitude mais segura?"
+  choice1: "Tentar mat\xE1-la com uma vassourada r\xE1pida, pois aranhas grandes
+    conseguem saltar longas dist\xE2ncias para atacar se perceberem amea\xE7as humanas."
+  outcome1: 3
+  amount1: 5
+  outcome1Title: Resoposta Incorreta
+  outcome1Text: "Aranhas s\xE3o grandes aliadas no controle de pragas urbanas (como
+    mosquitos e baratas) e a imensa maioria prefere fugir a atacar humanos."
+  choice2: 'Manter a calma e isolar o animal. '
+  outcome2: 2
+  amount2: 1
+  outecome2Title: Correto
+  outcome2Text: "Se precisar retir\xE1-la, use o m\xE9todo do copo (cubra-a com um
+    pote firme, deslize uma folha de papel r\xEDgido por baixo e solte-a no jardim).
+    Elas s\xE3o lentas e s\xF3 picam se forem espremidas."

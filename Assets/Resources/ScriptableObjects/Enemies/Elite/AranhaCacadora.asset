@@ -16,15 +16,27 @@ MonoBehaviour:
   spiderName: "Aranha Ca\xE7adora"
   cientificName: Heteropoda venatoria
   health: 128
-  description: "Largamente tropical, de colora\xE7\xE3o parda e corpo achatado, cuja
-    conforma\xE7\xE3o das patas lhe permite andar de lado. Possui h\xE1bitos noturnos
-    e \xE9 frequentemente encontrada em cachos de bananas.\\n\\nEncontrada majoritariamente
-    nas regi\xF5es litor\xE2neas das regi\xF5es nordeste e sudeste do Brasil e em
-    algumas partes da regi\xE3o norte.\t"
+  description: "\xC9 uma aranha de porte grande. Embora o seu corpo me\xE7a cerca
+    de 2 a 2,5 cent\xEDmetros, as suas pernas s\xE3o extremamente longas e se estendem
+    para os lados, o que faz com que ela atinja facilmente entre 10 e 12 cent\xEDmetros
+    de envergadura total.\\n\\nElas t\xEAm o corpo achatado, ideal para se esconder
+    em frestas estreitas, e colora\xE7\xE3o predominantemente marrom ou cinza-amarelada.\\n\\nN\xE3o
+    \xE9 considerada perigosa para os seres humanos."
   reference: https://www.inaturalist.org/taxa/48765-Heteropoda-venatoria#articles-tab
   curiosities:
   - "N\xE3o \xE9 considerada perigosa para humanos, mas produz veneno suficiente
     para dar uma mordida dolorosa."
+  - "N\xE3o constroem teias para ca\xE7ar. S\xE3o ca\xE7adoras ativas noturnas que
+    confiam na velocidade pura. Elas conseguem correr incrivelmente r\xE1pido e caminhar
+    de lado ou em superf\xEDcies verticais de vidro e teto com extrema facilidade
+    para dar o bote em suas presas."
+  - Adoram se esconder em locais escuros e estreitos durante o dia, elas frequentemente
+    entram em cachos de banana.
+  - "Nas casas onde se instala, ela \xE9 considerada uma predadora implac\xE1vel
+    de grandes baratas, al\xE9m de grilos e escorpi\xF5es, sendo extremamente eficaz
+    na limpeza biol\xF3gica do ambiente.Nas casas onde se instala, ela \xE9 considerada
+    uma predadora implac\xE1vel de grandes baratas americanas, al\xE9m de grilos
+    e escorpi\xF5es, sendo extremamente eficaz na limpeza biol\xF3gica do ambiente."
   reward: 50
   actions:
   - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}

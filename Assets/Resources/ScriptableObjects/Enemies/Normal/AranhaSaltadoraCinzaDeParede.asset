@@ -16,16 +16,19 @@ MonoBehaviour:
   spiderName: Aranha Saltadora Cinza de Parede
   cientificName: Menemerus bivittatus
   health: 45
-  description: "Elas n\xE3o tecem teias, mas sim perseguem suas presas antes de lan\xE7ar
-    um ataque saltando sobre a v\xEDtima.\n\tS\xE3o nativas da regi\xE3o subsaariana
-    da \xC1frica. Na Am\xE9rica, a esp\xE9cie \xE9 encontrada na Fl\xF3rida, Texas
-    e Calif\xF3rnia (EUA) e ao sul at\xE9 o Paraguai, incluindo algumas ilhas do
-    Caribe, Col\xF4mbia e Venezuela."
+  description: "\xC9 uma aranha de porte pequeno (cerca de 7 a 10 mil\xEDmetros de
+    comprimento), com o corpo achatado e coberto por pelos cinzas e brancos. \\n\\n\xC9
+    uma esp\xE9cie que se adaptou perfeitamente ao conv\xEDvio humano, sendo frequentemente
+    encontrada nas paredes externas e internas de casas, muros e locais ensolarados
+    em regi\xF5es tropicais do mundo inteiro."
   reference: https://www.inaturalist.org/taxa/68062-Menemerus-bivittatus#articles-tab
   curiosities:
-  - "Usam sua habilidade de salto altamente coordenada para capturar suas presas
-    e se mover de um lugar para outro. S\xE3o capazes de capturar insetos que t\xEAm
-    pelo menos o dobro do seu pr\xF3prio tamanho."
+  - "N\xE3o usa teias para capturar presas; em vez disso, ela espreita moscas, mosquitos
+    e formigas como se fosse um felino e salta sobre eles com extrema velocidade."
+  - "Embora n\xE3o use teia para ca\xE7ar, antes de dar um salto em uma parede vertical,
+    ela fixa um fio de seda no ponto de partida. Se ela errar o salto ou a presa
+    for pesada demais, esse fio funciona como uma corda de bungee jumping, impedindo
+    que ela caia no ch\xE3o."
   reward: 20
   actions:
   - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}

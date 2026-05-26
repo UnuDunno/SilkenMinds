@@ -29,10 +29,10 @@ public class ShopContainer : MonoBehaviour
         this.cardData = cardData;
     }
 
-    public void AddListenerBuyButton(UnityAction<CardData> action)
+    public void AddListenerBuyButton(UnityAction<CardData, Button> action)
     {
         buyCardButton.onClick.RemoveAllListeners();
-        buyCardButton.onClick.AddListener(() => action(cardData));
+        buyCardButton.onClick.AddListener(() => action(cardData, buyCardButton));
     }
 
     public void DeactivateCoinIcon()

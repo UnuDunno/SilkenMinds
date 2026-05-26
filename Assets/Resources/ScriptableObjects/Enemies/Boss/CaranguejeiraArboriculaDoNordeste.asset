@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
-  m_Name: Caranguejeira
+  m_Name: CaranguejeiraArboriculaDoNordeste
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   image: {fileID: 2458352875505273214, guid: 2a6dc2bb51385814e81d6b5168478aab, type: 3}
-  spiderName: Caranguejeira
+  spiderName: "Caranguejeira Arbor\xEDcola do Nordeste"
   cientificName: Iridopelma hirsutum
   health: 250
   description: "Aracn\xEDdeo de h\xE1bitos arbor\xEDculas, que vive sob casca de
     \xE1rvores ou estruturas sob as folhas baixas e at\xE9 mesmo dentro do solo nas
     florestas tropicais.\\n\\nOcorre no nordeste do Brasil, na regi\xE3o litor\xE2nea
-    e matas de transi\xE7\xE3o."
+    e matas de transi\xE7\xE3o.\\n\\nO risco para humanos \xE9 baix\xEDssimo."
   reference: https://www.inaturalist.org/taxa/804212-Iridopelma-hirsutum#articles-tab
   curiosities:
   - "A colora\xE7\xE3o desta esp\xE9cie varia \xE0 medida que envelhecem. Assim que

@@ -16,10 +16,15 @@ MonoBehaviour:
   spiderName: "Vi\xFAva Flamenguinha"
   cientificName: Latrodectus curacaviensis
   health: 200
-  description: "N\xE3o \xE9 agressiva com seres humanos, se alimenta de pequenos
-    insetos e possui uma distinta marca no formato de ampulheta com um diamante negro
-    e quatro tri\xE2ngulos vermelhos em um quadrado.\\n\\nEncontrada nas regi\xF5es
-    centro-oeste e nordeste do Brasil."
+  description: "\xC9 uma aranha de porte pequeno a m\xE9dio, onde as f\xEAmeas adultas
+    medem cerca de 1 a 1,5 cent\xEDmetros de corpo (sem contar as pernas). O seu
+    visual \xE9 marcante e intimidador: o abd\xF4men \xE9 globoso, predominantemente
+    preto-esverdeado ou cinza-escuro, decorado com manchas ou listras vermelhas vivas
+    no dorso. Na parte inferior do abd\xF4men, ela tamb\xE9m apresenta o desenho
+    caracter\xEDstico de ampulheta vermelha.\\n\\n\xC9 uma esp\xE9cie nativa da Am\xE9rica
+    do Sul, muito encontrada no ecossistema de restinga, dunas e sob vegeta\xE7\xE3o
+    rasteira nas praias brasileiras (especialmente na regi\xE3o Nordeste e Sudeste).\\n\\n\xC9
+    considerada venenosa e possui import\xE2ncia m\xE9dica grave para seres humanos."
   reference: https://www.inaturalist.org/taxa/467606-Latrodectus-curacaviensis#articles-tab
   curiosities:
   - "O veneno cont\xE9m neurotoxinas excitat\xF3rias. As picadas geralmente injetam
@@ -29,6 +34,7 @@ MonoBehaviour:
     sudorese, respira\xE7\xE3o acelerada, aumento da frequ\xEAncia card\xEDaca, incha\xE7o
     das p\xE1lpebras, saliva\xE7\xE3o, rigidez e dor nos m\xFAsculos abdominais,
     n\xE1useas, v\xF4mitos e vis\xE3o turva."
+  - "Apesar do veneno perigoso, elas n\xE3o s\xE3o agressivas."
   reward: 1000
   actions:
   - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}

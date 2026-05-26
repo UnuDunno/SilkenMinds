@@ -16,15 +16,21 @@ MonoBehaviour:
   spiderName: "Vi\xFAva Marrom"
   cientificName: Latrodectus geometricus
   health: 120
-  description: "Parente da conhecida Vi\xFAva Negra. A Vi\xFAva marrom tem listras
-    preto e branco nas laterais de seu abd\xF4men e nas patas, bem como uma marca\xE7\xE3o
-    em formato de ampulheta de cor amarelada.\\n\\nEncontradas em todo o mundo, mas
-    acredita-se que sejam origin\xE1rias da \xC1frica ou da Am\xE9rica do Sul."
+  description: "\xC9 uma aranha de porte pequeno a m\xE9dio, onde as f\xEAmeas adultas
+    medem entre 7 e 10 mil\xEDmetros de corpo (chegando a at\xE9 3 ou 4 cent\xEDmetros
+    se contarmos as pernas compridas). \\n\\nAssim como sua prima famosa (a vi\xFAva-negra),
+    a f\xEAmea possui o desenho de uma ampulheta na parte inferior do abd\xF4men,
+    mas na vi\xFAva-marrom essa marca tem uma colora\xE7\xE3o laranja-viva ou amarelada
+    (em vez de vermelha). \\n\\n\xC9 uma esp\xE9cie cosmopolita e muito adaptada
+    ao ambiente urbano e, apesar de venenosa, o risco de envenenamento grave em humanos
+    \xE9 considerado baixo."
   reference: https://www.inaturalist.org/taxa/47383-Latrodectus-geometricus#articles-tab
   curiosities:
   - "As picadas de Vi\xFAva Marrom, geralmente s\xE3o muito menos perigosas que as
     da Vi\xFAva Negra. Os efeitos da toxina geralmente ficam confinados \xE0 \xE1rea
     da picada e aos tecidos circundantes."
+  - "Muito comuns embaixo de cadeiras de pl\xE1stico de jardim, atr\xE1s de vasos
+    de plantas, em hidr\xF4metros de \xE1gua, frestas de muros, cal\xE7adas e garagens."
   reward: 50
   actions:
   - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}

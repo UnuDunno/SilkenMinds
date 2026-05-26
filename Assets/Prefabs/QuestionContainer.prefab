@@ -1479,6 +1479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5149562504187902254}
   - component: {fileID: 5343164955626983923}
+  - component: {fileID: 5993348682852552222}
   m_Layer: 5
   m_Name: QuestionContainer
   m_TagString: Untagged
@@ -1533,6 +1534,20 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &5993348682852552222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6624343486811073210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d07e41445138b11409cd9ce86db52b7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FeedbackQuestion
+  questionText: {fileID: 8145536839020091672}
+  answers: {fileID: 4744549380312660557}
 --- !u!1 &8089569094839000551
 GameObject:
   m_ObjectHideFlags: 0

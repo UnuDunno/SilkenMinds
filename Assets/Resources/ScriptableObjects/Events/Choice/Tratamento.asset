@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce4cc4c9b8c7bc46a073f480202eaff, type: 3}
+  m_Name: Tratamento
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceEvent
+  eventTitle: Tratamento
+  eventDescription: "Qual \xE9 o tratamento padr\xE3o e correto indicado em hospitais
+    para picadas de aranhas consideradas muito venenosas (como a aranha-armadeira
+    ou a vi\xFAva-negra)?"
+  choice1: "A aplica\xE7\xE3o de soro antiaracn\xEDdico espec\xEDfico na veia do
+    paciente para neutralizar as toxinas do veneno no organismo."
+  outcome1: 1
+  amount1: 10
+  outcome1Title: Correto
+  outcome1Text: 
+  choice2: "A aplica\xE7\xE3o local de compressas quentes combinada com doses altas
+    de antibi\xF3ticos para destruir as bact\xE9rias do ferr\xE3o."
+  outcome2: 3
+  amount2: 10
+  outecome2Title: Incorreto
+  outcome2Text: "Respota Correta: A aplica\xE7\xE3o de soro antiaracn\xEDdico espec\xEDfico
+    na veia do paciente para neutralizar as toxinas do veneno no organismo."

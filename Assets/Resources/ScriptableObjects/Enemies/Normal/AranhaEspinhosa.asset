@@ -16,15 +16,24 @@ MonoBehaviour:
   spiderName: Aranha Espinhosa
   cientificName: Gasteracantha cancriformis
   health: 90
-  description: "\tAs f\xEAmeas t\xEAm a carapa\xE7a r\xEDgida e preta com seis proje\xE7\xF5es
-    (espinhos) pretas ou vermelhas, duas em cada lateral e duas traseiras. Os machos
-    s\xE3o semelhantes na cor, mas no lugar da cor preta, tem a cor cinza e as proje\xE7\xF5es
-    s\xE3o menores e muitas vezes d\xE3o a impress\xE3o de que tem menos quantidade.\n\tEncontra-se
-    da Am\xE9rica do Sul at\xE9 a Am\xE9rica do Norte, sendo o limite sul dp Uruguai
-    at\xE9 o norte do Per\xFA e o limite ao norte nos Estados Unidos nos Estados
-    da Carolina do Norte at\xE9 a Calif\xF3rnia."
+  description: "\xC9 famosa pelo formato \xFAnico do seu abd\xF4men, que \xE9 endurecido
+    (parecendo uma carapa\xE7a de caranguejo) e possui seis espinhos proeminentes
+    nas laterais e na parte traseira. Existe um forte dimorfismo sexual na esp\xE9cie:
+    as f\xEAmeas medem entre 5 e 10 mil\xEDmetros de largura e s\xE3o extremamente
+    coloridas. J\xE1 os machos s\xE3o min\xFAsculos (2 a 3 mil\xEDmetros), n\xE3o
+    t\xEAm as cores vibrantes das f\xEAmeas e possuem espinhos muito reduzidos. \\n\\nElas
+    vivem em florestas, bordas de matas e jardins das Am\xE9ricas.\\n\\n\xC9 totalmente
+    inofensiva para seres humanos."
   reference: https://www.inaturalist.org/taxa/49540-Gasteracantha-cancriformis#articles-tab
-  curiosities: []
+  curiosities:
+  - "Constroem teias verticais perfeitamente circulares (orbes) que podem chegar
+    a 60 cent\xEDmetros de di\xE2metro. Uma caracter\xEDstica marcante \xE9 que elas
+    frequentemente adicionam pequenas tufos ou discos de seda branca nos fios de
+    sustenta\xE7\xE3o da teia. Acredita-se que esses \"enfeites\" sirvam como um
+    aviso visual para que p\xE1ssaros n\xE3o voem contra a teia e a destruam."
+  - "Os espinhos e a carapa\xE7a dura n\xE3o s\xE3o para ataque, mas sim uma armadura
+    de defesa. Para predadores pequenos, engolir essa aranha \xE9 muito dif\xEDcil
+    e doloroso por causa dos espinhos r\xEDgidos, o que faz com que eles a evitem."
   reward: 20
   actions:
   - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}

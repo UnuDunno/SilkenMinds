@@ -16,16 +16,22 @@ MonoBehaviour:
   spiderName: "Caranguejeira Rosa Salm\xE3o Brasileira"
   cientificName: Lasiodora parahybana
   health: 300
-  description: "De comportamento agressivo, n\xE3o representa contudo muitos riscos
-    ao homem adulto.\\n\\nOrigin\xE1ria da parte oriental do Nordeste Brasileiro,
-    onde \xE9 end\xEAmica."
+  description: "\xC9 considerada a terceira maior esp\xE9cie de caranguejeira do
+    mundo em envergadura de pernas. As f\xEAmeas adultas s\xE3o gigantescas, com
+    o corpo robusto e pesado que pode passar dos 10 cent\xEDmetros, atingindo uma
+    envergadura total de at\xE9 25 cent\xEDmetros com as pernas esticadas.\\n\\nDe
+    comportamento agressivo, n\xE3o representa contudo muitos riscos ao homem adulto.\\n\\nOrigin\xE1ria
+    da parte oriental do Nordeste Brasileiro, onde \xE9 end\xEAmica."
   reference: https://www.inaturalist.org/taxa/367113-Lasiodora-parahybana#articles-tab
   curiosities:
   - "As f\xEAmeas vivem de dez a quinze anos, e os machos correm o risco de morrer
     na c\xF3pula, porque a f\xEAmea costuma com\xEA-los ap\xF3s o ato de acasalamento."
-  - "Chegam a medir at\xE9 25 cm de comprimento na idade adulta."
-  - "Podem comer baratas, gafanhotos, grilos, lagartixas, besouros, pequenos roedores,
-    al\xE9m de tamb\xE9m terem comportamento canibal\xEDstico."
+  - "o contr\xE1rio do que muitos pensam sobre animais grandes serem lentos, a caranguejeira-da-para\xEDba
+    \xE9 surpreendentemente r\xE1pida quando decide dar o bote em uma presa ou quando
+    se assusta."
+  - "Embora a maior parte de sua dieta seja composta por grandes insetos (como baratas
+    e besouros), o seu tamanho e for\xE7a permitem que ela cace ocasionalmente pequenos
+    lagartos, anf\xEDbios, roedores e, sim, filhotes de aves que caem do ninho."
   - "Possui veneno relativamente fraco, incapaz de matar um homem adulto, e sua maior
     amea\xE7a estaria nos pelos urticantes que a envolvem, embora tenha picada dolorosa,
     em virtude do tamanho de suas longas quel\xEDceras."

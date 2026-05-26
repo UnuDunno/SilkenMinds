@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopPanelController : PanelController
 {
@@ -77,7 +78,7 @@ public class ShopPanelController : PanelController
         playerMoneyText.text = $"{player.GetMoney()}";
     }
 
-    public void BuyCard(CardData cardData)
+    public void BuyCard(CardData cardData, Button buyButton)
     {
         if (!(player.GetMoney() >= cardData.cardPrice)) return;
 
@@ -85,6 +86,8 @@ public class ShopPanelController : PanelController
         player.DecreaseMoney(cardData.cardPrice);
 
         playerMoneyText.text = $"{player.GetMoney()}";
+
+        buyButton.gameObject.SetActive(false);
     }
 
     public CardData ChooseShopCard()

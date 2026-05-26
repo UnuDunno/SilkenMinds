@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580067a577b2f1b40a49e8e6f1c119c8, type: 3}
+  m_Name: AranhaCaranguejoOrquidea
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  image: {fileID: 8515537268535184014, guid: 5b64ae94f0d23ce4d84d63249c0ba182, type: 3}
+  spiderName: "Aranha Caranguejo Orqu\xEDdea"
+  cientificName: Epicadus heterogaster
+  health: 40
+  description: "\xC9 uma aranha de tamanho pequeno (as f\xEAmeas medem cerca de 2
+    a 3 cm de di\xE2metro e os machos s\xE3o drasticamente menores). Ela recebe o
+    nome de \"aranha-caranguejo\" devido ao formato e \xE0 disposi\xE7\xE3o das suas
+    pernas dianteiras, que lembram as de um caranguejo.\\n\\nEmbora possua veneno
+    para imobilizar suas pequenas presas (insetos), ela n\xE3o \xE9 agressiva e o
+    seu veneno \xE9 considerado inofensivo para os seres humanos."
+  reference: https://www.inaturalist.org/taxa/510148-Epicadus-heterogaster
+  curiosities:
+  - "N\xE3o tecem teias para ca\xE7ar; em vez disso, sentam-se im\xF3veis em cima
+    de flores ou folhas tropicais e se disfar\xE7am como parte da pr\xF3pria flor."
+  reward: 20
+  actions:
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 5
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 5
+    effectImage: {fileID: 21300000, guid: 5aa0d71d789c93a468898d8acfcf2a09, type: 3}
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 5
+    effectImage: {fileID: 21300000, guid: 1815ea71c4e799e45b0db8899c240c4a, type: 3}
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 5
+    effectImage: {fileID: 21300000, guid: 1815ea71c4e799e45b0db8899c240c4a, type: 3}

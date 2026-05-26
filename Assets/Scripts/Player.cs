@@ -173,23 +173,20 @@ public class Player : MonoBehaviour
         {
             switch(cardData.cardName.ToLower())
             {
-                case "bloqueio":
-                    for(int i = 0; i < 6; i++) AddCardToDeck(cardData);
-                    break;
                 case "golpe":
-                    for (int i = 0; i < 6; i++) AddCardToDeck(cardData);
+                    for (int i = 0; i < 3; i++) AddCardToDeck(cardData);
                     break;
-                case "investida":
-                    for (int i = 0; i < 2; i++) AddCardToDeck(cardData);
+                case "bloqueio":
+                    for(int i = 0; i < 3; i++) AddCardToDeck(cardData);
                     break;
                 case "olhos de caçador":
                     for (int i = 0; i < 2; i++) AddCardToDeck(cardData);
                     break;
-                case "teia da vida":
-                    for (int i = 0; i < 2; i++) AddCardToDeck(cardData);
+                case "foco aracnídeo":
+                    for (int i = 0; i < 1; i++) AddCardToDeck(cardData);
                     break;
-                case "teia protetora":
-                    for (int i = 0; i < 2; i++) AddCardToDeck(cardData);
+                case "teia da vida":
+                    for (int i = 0; i < 1; i++) AddCardToDeck(cardData);
                     break;
                 default:
                     Debug.Log($"Unexpected card in the starting deck: {cardData.cardName}");

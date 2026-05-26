@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b0509b52fa57045bd73223092f6d1b, type: 3}
+  m_Name: EmCasoDePicada
+  m_EditorClassIdentifier: Assembly-CSharp::CuriosityEvent
+  eventTitle: Em Caso de Picada
+  eventDescription: "Se voc\xEA ou algu\xE9m pr\xF3ximo for picado por uma aranha,
+    o passo mais importante \xE9 lavar o local com \xE1gua e sab\xE3o e manter o
+    membro elevado. Se poss\xEDvel, tire uma foto n\xEDtida do animal (ou leve-o
+    em um frasco seguro) para ajudar os m\xE9dicos a identificarem a esp\xE9cie no
+    hospital. Nunca fa\xE7a torniquetes, n\xE3o fure o local e n\xE3o tente \"sugar\"
+    o veneno."
+  outcome: 1
+  outcomeAmount: 5
