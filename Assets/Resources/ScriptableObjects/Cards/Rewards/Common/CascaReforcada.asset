@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: CascaReforcada
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
-  fearValue: 0
-  effects: []
+  cardName: "Casca Refor\xE7ada"
+  cardDescription: Ganhe 6 de defesa e recupere 1 de Medo.
+  cardImage: {fileID: -321502150403154071, guid: 810109b235a25cb488e9ca1694945e1d, type: 3}
+  fearValue: 1
+  effects:
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 6
+    effectImage: {fileID: 0}
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 1
+    effectImage: {fileID: 0}
   cardPrice: 0

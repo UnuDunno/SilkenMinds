@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: BoteSurpresa
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
-  fearValue: 0
-  effects: []
+  cardName: Bote Surpresa
+  cardDescription: Cause 7 de dano e compre 1 carta.
+  cardImage: {fileID: -6321137741225794417, guid: 48dc7bdb211fbf34faa1e45b0f0d4f9d, type: 3}
+  fearValue: 1
+  effects:
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 7
+    effectImage: {fileID: 0}
+  - cardEffect: {fileID: 11400000, guid: da4cf339ca0867a4bb08332d0e9ddae6, type: 2}
+    value: 1
+    effectImage: {fileID: 0}
   cardPrice: 0

@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: FrenesiDasOitoPatas
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
-  fearValue: 0
-  effects: []
-  cardPrice: 0
+  cardName: Frenesi das Oito Patas
+  cardDescription: Compre 4 cartas e recupere 1 de Medo.
+  cardImage: {fileID: -7157451492410298319, guid: b803896edf6cd694991323a3d8ff80bd, type: 3}
+  fearValue: 2
+  effects:
+  - cardEffect: {fileID: 11400000, guid: da4cf339ca0867a4bb08332d0e9ddae6, type: 2}
+    value: 4
+    effectImage: {fileID: 0}
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 1
+    effectImage: {fileID: 0}
+  cardPrice: 100

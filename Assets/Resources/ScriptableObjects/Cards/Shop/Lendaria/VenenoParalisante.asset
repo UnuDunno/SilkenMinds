@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: VenenoParalisante
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
-  fearValue: 0
-  effects: []
-  cardPrice: 0
+  cardName: Veneno Paralisante
+  cardDescription: Cause 25 de dano.
+  cardImage: {fileID: 7700790025892479994, guid: 14966e23ad171154d9eaedff644eaa0f, type: 3}
+  fearValue: 25
+  effects:
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 25
+    effectImage: {fileID: 0}
+  cardPrice: 100

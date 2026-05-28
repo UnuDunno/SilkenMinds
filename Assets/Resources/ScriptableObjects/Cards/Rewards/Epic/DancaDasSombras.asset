@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: DancaDasSombras
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
-  fearValue: 0
-  effects: []
+  cardName: "Dan\xE7a das Sombras"
+  cardDescription: Ganhe 10 de defesa e compre 2 cartas.
+  cardImage: {fileID: -1706443346397582237, guid: ded26c27a30c68c4f8a4b3732e96b6dd, type: 3}
+  fearValue: 2
+  effects:
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 10
+    effectImage: {fileID: 0}
+  - cardEffect: {fileID: 11400000, guid: da4cf339ca0867a4bb08332d0e9ddae6, type: 2}
+    value: 2
+    effectImage: {fileID: 0}
   cardPrice: 0

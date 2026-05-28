@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: TeiaRestauradora
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
-  fearValue: 0
-  effects: []
+  cardName: Teia Restauradora
+  cardDescription: Ganhe 4 de defesa e cure 2 de vida.
+  cardImage: {fileID: -5823483562951712609, guid: 568ecf85093848a4f971d961bbaccd9a, type: 3}
+  fearValue: 1
+  effects:
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 4
+    effectImage: {fileID: 0}
+  - cardEffect: {fileID: 11400000, guid: d00e68b1ba8dad14ba628e32224a6e02, type: 2}
+    value: 2
+    effectImage: {fileID: 0}
   cardPrice: 0

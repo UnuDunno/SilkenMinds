@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: CasuloDeFerro
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
-  fearValue: 0
-  effects: []
+  cardName: Casulo de Ferro
+  cardDescription: Ganhe 18 de defesa e recupere 2 de Medo.
+  cardImage: {fileID: 470413736921753818, guid: 7e3679805a5423140a28815b4d921994, type: 3}
+  fearValue: 2
+  effects:
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 18
+    effectImage: {fileID: 0}
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 2
+    effectImage: {fileID: 0}
   cardPrice: 0

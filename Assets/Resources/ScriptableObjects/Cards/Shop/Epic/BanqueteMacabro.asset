@@ -20,4 +20,4 @@ MonoBehaviour:
   - cardEffect: {fileID: 11400000, guid: d00e68b1ba8dad14ba628e32224a6e02, type: 2}
     value: 6
     effectImage: {fileID: 0}
-  cardPrice: 50
+  cardPrice: 75

@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: Metamorfose
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
-  fearValue: 0
-  effects: []
-  cardPrice: 0
+  cardName: Metamorfose
+  cardDescription: Cure 10 de vida e compre 2 cartas.
+  cardImage: {fileID: 4035174821513914264, guid: 03668ab5da549484a9478abcf7fa71c2, type: 3}
+  fearValue: 4
+  effects:
+  - cardEffect: {fileID: 11400000, guid: d00e68b1ba8dad14ba628e32224a6e02, type: 2}
+    value: 10
+    effectImage: {fileID: 0}
+  - cardEffect: {fileID: 11400000, guid: da4cf339ca0867a4bb08332d0e9ddae6, type: 2}
+    value: 2
+    effectImage: {fileID: 0}
+  cardPrice: 100

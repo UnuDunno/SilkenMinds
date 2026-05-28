@@ -15,7 +15,9 @@ MonoBehaviour:
   cardName: "Sussurros da Escurid\xE3o"
   cardDescription: Regenera toda a vida
   cardImage: {fileID: 2910342643693782744, guid: a9ff9c86f7a42e042bdf7cd2713482b5, type: 3}
-  fearValue: 8
+  fearValue: 4
   effects:
   - cardEffect: {fileID: 11400000, guid: d00e68b1ba8dad14ba628e32224a6e02, type: 2}
     value: 9999
+    effectImage: {fileID: 0}
+  cardPrice: 0

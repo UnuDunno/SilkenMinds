@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: SangueFrio
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
+  cardName: Sangue Frio
+  cardDescription: Pague 3 de vida e recupere 3 de Medo.
+  cardImage: {fileID: -604869439143383748, guid: 10df8049499257244bf47590f271bada, type: 3}
   fearValue: 0
-  effects: []
-  cardPrice: 0
+  effects:
+  - cardEffect: {fileID: 11400000, guid: d00e68b1ba8dad14ba628e32224a6e02, type: 2}
+    value: -3
+    effectImage: {fileID: 0}
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 3
+    effectImage: {fileID: 0}
+  cardPrice: 75

@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: SedaPegajosa
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
-  fearValue: 0
-  effects: []
-  cardPrice: 0
+  cardName: Seda Pegajosa
+  cardDescription: Ganhe 3 de defesa e compre 1 carta.
+  cardImage: {fileID: -2363014268242416064, guid: 7ac2e52625616d745bc8508b84fca979, type: 3}
+  fearValue: 1
+  effects:
+  - cardEffect: {fileID: 11400000, guid: cdd8040360650054d9d4a1c249244981, type: 2}
+    value: 3
+    effectImage: {fileID: 0}
+  - cardEffect: {fileID: 11400000, guid: da4cf339ca0867a4bb08332d0e9ddae6, type: 2}
+    value: 1
+    effectImage: {fileID: 0}
+  cardPrice: 50

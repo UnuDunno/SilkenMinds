@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: PicadaLetal
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
-  fearValue: 0
-  effects: []
+  cardName: Picada Letal
+  cardDescription: Cause 16 de dano.
+  cardImage: {fileID: -5939646550174777925, guid: 01a246ef978250b4099251537d5d2718, type: 3}
+  fearValue: 2
+  effects:
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 16
+    effectImage: {fileID: 0}
   cardPrice: 0

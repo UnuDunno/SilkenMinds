@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: AbracoDaViuva
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
-  fearValue: 0
-  effects: []
+  cardName: "Abra\xE7o da Vi\xFAva"
+  cardDescription: Cause 30 de dano.
+  cardImage: {fileID: 8673185420470251343, guid: 1b0d4b5284644cd458f6d2427d7fa6a4, type: 3}
+  fearValue: 4
+  effects:
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 30
+    effectImage: {fileID: 0}
   cardPrice: 0

@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: PredadorAlfa
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
-  fearValue: 0
-  effects: []
+  cardName: Predador Alfa
+  cardDescription: Cause 20 de dano e cure 5 de vida.
+  cardImage: {fileID: 1554526912431221701, guid: 0ddf740312cee614f98c4ed68329e9f6, type: 3}
+  fearValue: 3
+  effects:
+  - cardEffect: {fileID: 11400000, guid: fc8b70c991f863c4b95ce128b8e86a1d, type: 2}
+    value: 20
+    effectImage: {fileID: 0}
+  - cardEffect: {fileID: 11400000, guid: d00e68b1ba8dad14ba628e32224a6e02, type: 2}
+    value: 5
+    effectImage: {fileID: 0}
   cardPrice: 0

@@ -7,7 +7,7 @@ public class MapController : MonoBehaviour
 {
     [Header("Map Generation Configs")]
     [SerializeField] private MapCreator mapCreator;
-    [SerializeField] private int layers = 10;
+    [SerializeField] private int layers = 15;
     [SerializeField] private int layerMultiplier = 2;
     [SerializeField] private float initialRadius = 1f;
     [SerializeField] private float radiusIncrement = 1f;

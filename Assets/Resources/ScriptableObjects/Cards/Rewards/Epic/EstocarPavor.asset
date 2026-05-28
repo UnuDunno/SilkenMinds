@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2cc9087f899ff458f181f8b37b76d4, type: 3}
   m_Name: EstocarPavor
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  cardName: 
-  cardDescription: 
-  cardImage: {fileID: 0}
+  cardName: Estocar Pavor
+  cardDescription: Recupere 4 de Medo.
+  cardImage: {fileID: 2186145304445271967, guid: 559da8c1ecf60c8499588f99243d6188, type: 3}
   fearValue: 0
-  effects: []
+  effects:
+  - cardEffect: {fileID: 11400000, guid: 88c8b88ccea9392469b8874cfaa03903, type: 2}
+    value: 4
+    effectImage: {fileID: 0}
   cardPrice: 0
